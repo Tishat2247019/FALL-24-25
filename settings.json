@@ -1,0 +1,360 @@
+{
+  /*
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+   "vim.insertModeKeyBindings":[
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ], 
+   "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive":[
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  
+  "// To improve performance",
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+    }, */
+  "vim.leader": "<space>",
+  "files.autoSave": "onFocusChange",
+  "vim.easymotion": true,
+  "vim.startInInsertMode": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.easymotionMarkerooundColor": "#020202",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["backspace"],
+      "commands": ["deleteLeft"]
+    }
+    // {
+    //   "before": ["<tab>"],
+    //   "commands": ["workbench.action.nextEditor"]
+    // },
+    // {
+    //   "before": ["<S-tab>"],
+    //   "commands": ["workbench.action.previousEditor"]
+    // },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    }
+  ],
+
+  "vim.haindleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    // VS Code new marker @ next occurence
+    "<C-c>": false,
+    // Cut
+    "<C-x>": false,
+    // Paste
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-y>": false
+  },
+
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  // "terminal.integrated.fontFamily": "cascadia code",
+  //"terminal.integrated.fontFamily": "Terminus",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.fontWeight": "350",
+  //"terminal.integrated.fontWeight": "600",
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "'Consolas','Consolas','cascadia code','Anonymous Pro Bold','Roboto Mono', Consolas, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  //   "editor.tokenColorCustomizations": {
+  //     "comments": "#ff0000"
+  // },
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "explorer.confirmDelete": false,
+  "code-runner.executorMap": {
+    "html": "start chrome",
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    //"java": "cd $dir && javac $fileName && start cmd \"/c; java $fileNameWithoutExt &pause\"",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && start cmd \"/c ; $fileNameWithoutExt &pause\"",
+    //"cpp": "cd $dir && g++ -O2 -std=c++17 $fileName -o $fileNameWithoutExt && start cmd \"/k ; $fileNameWithoutExt\"",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt &&  $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "cd $dir && dotnet run $fileName",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "files.associations": {
+    "*.rmd": "markdown",
+    "iostream": "cpp",
+    "iosfwd": "cpp",
+    "array": "cpp",
+    "atomic": "cpp",
+    "*.tcc": "cpp",
+    "cctype": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "cstdarg": "cpp",
+    "cstddef": "cpp",
+    "cstdint": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "exception": "cpp",
+    "algorithm": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "memory": "cpp",
+    "memory_resource": "cpp",
+    "numeric": "cpp",
+    "random": "cpp",
+    "string": "cpp",
+    "system_error": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp",
+    "fstream": "cpp",
+    "initializer_list": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "new": "cpp",
+    "ostream": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "typeinfo": "cpp",
+    "bitset": "cpp",
+    "cfenv": "cpp",
+    "chrono": "cpp",
+    "cinttypes": "cpp",
+    "codecvt": "cpp",
+    "complex": "cpp",
+    "condition_variable": "cpp",
+    "csetjmp": "cpp",
+    "csignal": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp",
+    "cuchar": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "unordered_set": "cpp",
+    "map": "cpp",
+    "ratio": "cpp",
+    "regex": "cpp",
+    "set": "cpp",
+    "future": "cpp",
+    "iomanip": "cpp",
+    "mutex": "cpp",
+    "scoped_allocator": "cpp",
+    "shared_mutex": "cpp",
+    "thread": "cpp",
+    "typeindex": "cpp",
+    "valarray": "cpp",
+    "*.jsx": "javascriptreact"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 3, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#108627",
+    "statusBar.noFolderBackground": "#73cfa8",
+    "statusBar.debuggingBackground": "#73cfa8",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+    //"list.focusForeground": "#00ff00"
+    // "editor.foreground": "#fffafa"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 1.2
+  },
+  "html.format.extraLiners": "",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "git.ignoreMissingGitWarning": true,
+  "editor.fontWeight": "100",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "git.confirmSync": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "code-runner.runInTerminal": true,
+  "terminal.integrated.cursorStyle": "line",
+  // "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.localEchoStyle": "dim",
+  "window.zoomLevel": 1.2,
+  "C_Cpp.default.compilerPath": "C:/MinGW/bin/g++.exe",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.lineHeight": 1,
+  "terminal.integrated.fontSize": 13,
+  "git.enableSmartCommit": true,
+  "cmake.showOptionsMovedNotification": false,
+  "dart.lineLength": 300,
+  "editor.guides.bracketPairs": true,
+  "liveServer.settings.showOnStatusbar": true,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command"
+  ],
+  "settingsSync.ignoredSettings": []
+}

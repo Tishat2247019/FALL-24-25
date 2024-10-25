@@ -1,0 +1,66 @@
+// Place your key bindings in this file to override the defaults
+[
+{
+    "key":"ctrl+n",
+    "command":"explorer.newFile"
+},
+    { "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn"
+},
+{ "key": "ctrl+-",
+"command": "editor.action.fontZoomOut"
+},
+{
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+i",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+j",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+k",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+},{
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    }, 
+    {
+        "key": "shift shift",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+      }
+// {
+//     "key": "tab",
+//     "command": "tab",
+//     "when": "editorTextFocus && !editorTabMovesFocus"
+// },
+
+ 
+// {
+//     "key": "shift+tab",
+//     "command": "outdent",
+//     "when": "editorTextFocus && !editorTabMovesFocus"
+// }
+   /*  {
+        "key": "ctrl+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "$CURRENT_MONTH_NAME, $CURRENT_DATE, $CURRENT_YEAR , $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND"
+        }
+    } */
+
+] 
