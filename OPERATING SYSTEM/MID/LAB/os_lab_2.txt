@@ -1,0 +1,403 @@
+~$ history
+    1  ls
+    2  pwd
+    3  history
+    4  date
+    5  cal
+    6  cal -yy
+    7  cal -y
+    8  man -l
+    9  man cal
+   10  help cal
+   11  uname -r
+   12  uname -m
+   13  clear
+   14  history
+~$ !10
+help cal
+caller: caller [expr]
+    Return the context of the current subroutine call.
+    
+    Without EXPR, returns "$line $filename".  With EXPR, returns
+    "$line $subroutine $filename"; this extra information can be used to
+    provide a stack trace.
+    
+    The value of EXPR indicates how many call frames to go back before the
+    current one; the top frame is frame 0.
+    
+    Exit Status:
+    Returns 0 unless the shell is not executing a shell function or EXPR
+    is invalid.
+~$ !1
+ls
+termnal.term
+~$ pwd
+/home/user
+~$ man touch
+~$ mkdir tishat
+~$ ls
+termnal.term  tishat
+~$ cd tishat
+~/tishat$ dir ..
+termnal.term  tishat
+~/tishat$ cd ..
+~$ ls
+termnal.term  tishat
+~$ ls -l
+total 1
+-rw-r--r-- 1 user user 0 Oct 30 08:40 termnal.term
+drwxr-xr-x 2 user user 2 Oct 30 08:52 tishat
+~$ ls -la
+total 22
+drwxr-xr-x 5 user user    14 Oct 30 08:52 .
+drwxr-xr-x 1 root root  4096 Oct 30 07:52 ..
+-rw------- 1 user user   169 Oct 30 08:54 .bash_history
+lrwxrwxrwx 1 user user    18 Oct 30 07:52 .bash_profile -> /home/user/.bashrc
+-rw-r--r-- 1 user user  2355 Oct 30 07:52 .bashrc
+-rw-r--r-- 1 user user     0 Oct 30 08:40 .compute-server.syncdb
+-rw-r--r-- 1 user user  8192 Oct 30 07:52 .jupyter-blobs-v0.db
+-rw------- 1 user user    20 Oct 30 08:52 .lesshst
+lrwxrwxrwx 1 user user    12 Oct 30 07:52 .smc -> /tmp/.cocalc
+dr-xr-xr-x 4 user user     2 Oct 30 08:40 .snapshots
+drwxr-xr-x 2 user user     3 Oct 30 07:52 .ssh
+-rw-r--r-- 1 user user 38848 Oct 30 08:54 .termnal.term-0.term
+-rw-r--r-- 1 user user     0 Oct 30 08:40 termnal.term
+drwxr-xr-x 2 user user     2 Oct 30 08:52 tishat
+~$ cd tishat/
+~/tishat$ pwed
+bash: pwed: command not found
+~/tishat$ pwed
+bash: pwed: command not found
+~/tishat$ pwd
+/home/user/tishat
+~/tishat$ touch newfile.txt
+~/tishat$ ls
+newfile.txt
+~/tishat$ echo "this is a new file " > another_file.txt
+~/tishat$ cat another_file.txt
+this is a new file 
+~/tishat$ cat newfile.txt 
+~/tishat$ nano newfile.txt 
+~/tishat$ echo "this is another line" >> another_file.txt
+~/tishat$ cat another_file.txt
+this is a new file 
+this is another line
+~/tishat$ ls -a
+.  ..  another_file.txt  newfile.txt
+~/tishat$ man mv
+~/tishat$ man mv
+~/tishat$ 
+~/tishat$ ls
+another_file.txt  newfile.txt
+~/tishat$ ls *.txt
+another_file.txt  newfile.txt
+~/tishat$ man
+What manual page do you want?
+For example, try 'man man'.
+~/tishat$ man man
+~/tishat$ ls >> info.txt
+~/tishat$ cat info.txt
+another_file.txt
+info.txt
+newfile.txt
+~/tishat$ cat info.txt 
+another_file.txt
+info.txt
+newfile.txt
+~/tishat$ ls
+another_file.txt  info.txt  newfile.txt
+~/tishat$ ls >> info.txt
+~/tishat$ cat info.txt
+another_file.txt
+info.txt
+newfile.txt
+another_file.txt
+info.txt
+newfile.txt
+~/tishat$ ls
+another_file.txt  info.txt  newfile.txt
+~/tishat$ ls >> fill.txt
+~/tishat$ cat fill.txt
+another_file.txt
+fill.txt
+info.txt
+newfile.txt
+~/tishat$ pwd
+/home/user/tishat
+~/tishat$ pwd >> pwd.txt
+~/tishat$ cat pwd.txt 
+/home/user/tishat
+~/tishat$ ls
+another_file.txt  fill.txt  info.txt  newfile.txt  pwd.txt
+~/tishat$ cat fill.txt + info.txt
+another_file.txt
+fill.txt
+info.txt
+newfile.txt
+cat: +: No such file or directory
+another_file.txt
+info.txt
+newfile.txt
+another_file.txt
+info.txt
+newfile.txt
+~/tishat$ cat fill.txt info.txt
+another_file.txt
+fill.txt
+info.txt
+newfile.txt
+another_file.txt
+info.txt
+newfile.txt
+another_file.txt
+info.txt
+newfile.txt
+~/tishat$ ls
+another_file.txt  fill.txt  info.txt  newfile.txt  pwd.txt
+~/tishat$ cat another_file.txt 
+this is a new file 
+this is another line
+~/tishat$ cat fill.txt 
+another_file.txt
+fill.txt
+info.txt
+newfile.txt
+~/tishat$ cat pwd.txt 
+/home/user/tishat
+~/tishat$ cat another_file.txt fill.txt pwd.txt >> new_fil_combine.txt
+~/tishat$ cat new_fil_combine.txt 
+this is a new file 
+this is another line
+another_file.txt
+fill.txt
+info.txt
+newfile.txt
+/home/user/tishat
+~/tishat$ dir
+another_file.txt  fill.txt  info.txt  new_fil_combine.txt  newfile.txt  pwd.txt
+~/tishat$ ls dir
+ls: cannot access 'dir': No such file or directory
+~/tishat$ dir
+another_file.txt  fill.txt  info.txt  new_fil_combine.txt  newfile.txt  pwd.txt
+~/tishat$ man dir
+~/tishat$ man cal
+~/tishat$ hitory
+bash: hitory: command not found
+~/tishat$ histroy
+bash: histroy: command not found
+~/tishat$ history 
+    1  ls
+    2  pwd
+    3  history
+    4  date
+    5  cal
+    6  cal -yy
+    7  cal -y
+    8  man -l
+    9  man cal
+   10  help cal
+   11  uname -r
+   12  uname -m
+   13  clear
+   14  history
+   15  help cal
+   16  ls
+   17  pwd
+   18  man touch
+   19  mkdir tishat
+   20  ls
+   21  cd tishat
+   22  dir ..
+   23  cd ..
+   24  ls
+   25  ls -l
+   26  ls -la
+   27  cd tishat/
+   28  pwed
+   29  pwd
+   30  touch newfile.txt
+   31  ls
+   32  echo "this is a new file " > another_file.txt
+   33  cat another_file.txt
+   34  cat newfile.txt 
+   35  nano newfile.txt 
+   36  echo "this is another line" >> another_file.txt
+   37  cat another_file.txt
+   38  ls -a
+   39  man mv
+   40  ls
+   41  ls *.txt
+   42  man
+   43  man man
+   44  ls >> info.txt
+   45  cat info.txt
+   46  cat info.txt 
+   47  ls
+   48  ls >> info.txt
+   49  cat info.txt
+   50  ls
+   51  ls >> fill.txt
+   52  cat fill.txt
+   53  pwd
+   54  pwd >> pwd.txt
+   55  cat pwd.txt 
+   56  ls
+   57  cat fill.txt + info.txt
+   58  cat fill.txt info.txt
+   59  ls
+   60  cat another_file.txt 
+   61  cat fill.txt 
+   62  cat pwd.txt 
+   63  cat another_file.txt fill.txt pwd.txt >> new_fil_combine.txt
+   64  cat new_fil_combine.txt 
+   65  dir
+   66  ls dir
+   67  dir
+   68  man dir
+   69  man cal
+   70  hitory
+   71  histroy
+   72  history 
+~/tishat$ !62
+cat pwd.txt 
+/home/user/tishat
+~/tishat$ ls
+another_file.txt  fill.txt  info.txt  new_fil_combine.txt  newfile.txt  pwd.txt
+~/tishat$ ls -l
+total 6
+-rw-r--r-- 1 user user  41 Oct 30 08:58 another_file.txt
+-rw-r--r-- 1 user user  47 Oct 30 09:11 fill.txt
+-rw-r--r-- 1 user user  76 Oct 30 09:11 info.txt
+-rw-r--r-- 1 user user 106 Oct 30 09:16 new_fil_combine.txt
+-rw-r--r-- 1 user user  63 Oct 30 08:57 newfile.txt
+-rw-r--r-- 1 user user  18 Oct 30 09:14 pwd.txt
+~/tishat$ ls -la
+total 9
+drwxr-xr-x 2 user user   8 Oct 30 09:16 .
+drwxr-xr-x 6 user user  15 Oct 30 09:19 ..
+-rw-r--r-- 1 user user  41 Oct 30 08:58 another_file.txt
+-rw-r--r-- 1 user user  47 Oct 30 09:11 fill.txt
+-rw-r--r-- 1 user user  76 Oct 30 09:11 info.txt
+-rw-r--r-- 1 user user 106 Oct 30 09:16 new_fil_combine.txt
+-rw-r--r-- 1 user user  63 Oct 30 08:57 newfile.txt
+-rw-r--r-- 1 user user  18 Oct 30 09:14 pwd.txt
+~/tishat$ cd ..
+~$ pwd
+/home/user
+~$ pwd
+/home/user
+~$ uname -r
+5.15.0-1046-gcp
+~$ uname -m
+x86_64
+~$ mkdir new_folder
+~$ cd new_folder/
+~/new_folder$ ls
+~/new_folder$ ls -la
+total 2
+drwxr-xr-x 2 user user  2 Oct 30 09:49 .
+drwxr-xr-x 7 user user 16 Oct 30 09:49 ..
+~/new_folder$ touch file1.txt
+~/new_folder$ echo "this is the first line" >> file1.txt
+~/new_folder$ echo "this is the second line" >> file1.txt
+~/new_folder$ cat file1.txt
+this is the first line
+this is the second line
+~/new_folder$ touch file2.txt file3.txt
+~/new_folder$ ls *.txt
+file1.txt  file2.txt  file3.txt
+~/new_folder$ mkdir folder1/sub_folder1/
+mkdir: cannot create directory ‘folder1/sub_folder1/’: No such file or directory
+~/new_folder$ mkdir folder1/sub_folder1
+mkdir: cannot create directory ‘folder1/sub_folder1’: No such file or directory
+~/new_folder$ mkdir folder1\sub_folder1
+~/new_folder$ dir
+file1.txt  file2.txt  file3.txt  folder1sub_folder1
+~/new_folder$ lst
+bash: lst: command not found
+~/new_folder$ ls
+file1.txt  file2.txt  file3.txt  folder1sub_folder1
+~/new_folder$ man mkdir
+~/new_folder$ man delete
+~/new_folder$ man mkdir
+~/new_folder$ rmdir folder1sub_folder1/
+~/new_folder$ lu
+bash: lu: command not found
+~/new_folder$ ls
+file1.txt  file2.txt  file3.txt
+~/new_folder$ uname
+Linux
+~/new_folder$ mkdir -p folder1/sub_folder1/sub_folder2
+~/new_folder$ dir
+file1.txt  file2.txt  file3.txt  folder1
+~/new_folder$ cd folder1/
+~/new_folder/folder1$ cd sub_folder1/
+~/new_folder/folder1/sub_folder1$ cd sub_folder2/
+~/new_folder/folder1/sub_folder1/sub_folder2$ man mkdir
+~/new_folder/folder1/sub_folder1/sub_folder2$ cd ..
+~/new_folder/folder1/sub_folder1$ cd ..
+~/new_folder/folder1$ cd ..
+~/new_folder$ uname -r
+5.15.0-1046-gcp
+~/new_folder$ man touch
+~/new_folder$ touch .hidden.txt
+~/new_folder$ ls
+file1.txt  file2.txt  file3.txt  folder1
+~/new_folder$ ls -a
+.  ..  .hidden.txt  file1.txt  file2.txt  file3.txt  folder1
+~/new_folder$ ls >> output.txt
+~/new_folder$ uname
+Linux
+~/new_folder$ lshw
+bash: lshw: command not found
+~/new_folder$ sudo lshw
+
+╔═══════════════════════════════════════════════════════════════════╗
+║  ⚠           STOP: YOUR ARE NOT AN ADMINISTRATOR               ⚠  ║
+╠═══════════════════════════════════════════════════════════════════╣
+║ It is not possible to gain elevated privileges – neither via      ║
+║ sudo nor any other mechanism. CoCalc projects run in heavily      ║
+║ restricted containers for security reasons!                       ║
+╟───────────────────────────────────────────────────────────────────╢
+║ However, you can become admin in a 𝗖𝗢𝗠𝗣𝗨𝗧𝗘 𝗦𝗘𝗥𝗩𝗘𝗥!                ║
+║ Learn more here:       https://doc.cocalc.com/compute_server.html ║
+╟───────────────────────────────────────────────────────────────────╢
+║ In case you want to install some software:                        ║
+║ Python: pip3 install --user [pkgname]                             ║
+║         https://doc.cocalc.com/howto/install-python-lib.html      ║
+║ Node:   npm [pkg] instead of sudo npm -g [pkg]                    ║
+║ R:      open Terminal, run R, and then install.package(...)       ║
+║         https://doc.cocalc.com/howto/install-r-package.html       ║
+║ Build:  ./configure --prefix=~/.local && make && make install     ║
+║ Hint: it might already be available: https://cocalc.com/software  ║
+╟───────────────────────────────────────────────────────────────────╢
+║ Support: help@cocalc.com – for global software install requests   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+~/new_folder$ lshw
+bash: lshw: command not found
+~/new_folder$ man uname
+~/new_folder$ uname -o
+GNU/Linux
+~/new_folder$ uname -0
+uname: invalid option -- '0'
+Try 'uname --help' for more information.
+~/new_folder$ man uname
+~/new_folder$ uname -a
+Linux project-4ae6ba24-43ec-4b9d-a433-7702334fc520 5.15.0-1046-gcp #54~20.04.1-Ubuntu SMP Wed Oct 25 08:22:15 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+~/new_folder$ uname -ll
+uname: invalid option -- 'l'
+Try 'uname --help' for more information.
+~/new_folder$ man uname
+~/new_folder$ inxi -F
+bash: inxi: command not found
+~/new_folder$ whoami
+user
+~/new_folder$ hwinfo
+bash: hwinfo: command not found
+~/new_folder$ man uname
+~/new_folder$ 
+~/new_folder$ uname -a >> log.txt
+~/new_folder$ cat log.txt
+Linux project-4ae6ba24-43ec-4b9d-a433-7702334fc520 5.15.0-1046-gcp #54~20.04.1-Ubuntu SMP Wed Oct 25 08:22:15 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+~/new_folder$ 
