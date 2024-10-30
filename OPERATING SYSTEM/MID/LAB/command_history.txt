@@ -1,0 +1,135 @@
+    1  ls
+    2  pwd
+    3  history
+    4  date
+    5  cal
+    6  cal -yy
+    7  cal -y
+    8  man -l
+    9  man cal
+   10  help cal
+   11  uname -r
+   12  uname -m
+   13  clear
+   14  history
+   15  help cal
+   16  ls
+   17  pwd
+   18  man touch
+   19  mkdir tishat
+   20  ls
+   21  cd tishat
+   22  dir ..
+   23  cd ..
+   24  ls
+   25  ls -l
+   26  ls -la
+   27  cd tishat/
+   28  pwed
+   29  pwd
+   30  touch newfile.txt
+   31  ls
+   32  echo "this is a new file " > another_file.txt
+   33  cat another_file.txt
+   34  cat newfile.txt 
+   35  nano newfile.txt 
+   36  echo "this is another line" >> another_file.txt
+   37  cat another_file.txt
+   38  ls -a
+   39  man mv
+   40  ls
+   41  ls *.txt
+   42  man
+   43  man man
+   44  ls >> info.txt
+   45  cat info.txt
+   46  cat info.txt 
+   47  ls
+   48  ls >> info.txt
+   49  cat info.txt
+   50  ls
+   51  ls >> fill.txt
+   52  cat fill.txt
+   53  pwd
+   54  pwd >> pwd.txt
+   55  cat pwd.txt 
+   56  ls
+   57  cat fill.txt + info.txt
+   58  cat fill.txt info.txt
+   59  ls
+   60  cat another_file.txt 
+   61  cat fill.txt 
+   62  cat pwd.txt 
+   63  cat another_file.txt fill.txt pwd.txt >> new_fil_combine.txt
+   64  cat new_fil_combine.txt 
+   65  dir
+   66  ls dir
+   67  dir
+   68  man dir
+   69  man cal
+   70  hitory
+   71  histroy
+   72  history 
+   73  cat pwd.txt 
+   74  ls
+   75  ls -l
+   76  ls -la
+   77  cd ..
+   78  pwd
+   79  uname -r
+   80  uname -m
+   81  mkdir new_folder
+   82  cd new_folder/
+   83  ls
+   84  ls -la
+   85  touch file1.txt
+   86  echo "this is the first line" >> file1.txt
+   87  echo "this is the second line" >> file1.txt
+   88  cat file1.txt
+   89  touch file2.txt file3.txt
+   90  ls *.txt
+   91  mkdir folder1/sub_folder1/
+   92  mkdir folder1/sub_folder1
+   93  mkdir folder1\sub_folder1
+   94  dir
+   95  lst
+   96  ls
+   97  man mkdir
+   98  man delete
+   99  man mkdir
+  100  rmdir folder1sub_folder1/
+  101  lu
+  102  ls
+  103  uname
+  104  mkdir -p folder1/sub_folder1/sub_folder2
+  105  dir
+  106  cd folder1/
+  107  cd sub_folder1/
+  108  cd sub_folder2/
+  109  man mkdir
+  110  cd ..
+  111  uname -r
+  112  man touch
+  113  touch .hidden.txt
+  114  ls
+  115  ls -a
+  116  ls >> output.txt
+  117  uname
+  118  lshw
+  119  sudo lshw
+  120  lshw
+  121  man uname
+  122  uname -o
+  123  uname -0
+  124  man uname
+  125  uname -a
+  126  uname -ll
+  127  man uname
+  128  inxi -F
+  129  whoami
+  130  hwinfo
+  131  man uname
+  132  uname -a >> log.txt
+  133  cat log.txt
+  134  history
+  135  history >> command_history.txt
