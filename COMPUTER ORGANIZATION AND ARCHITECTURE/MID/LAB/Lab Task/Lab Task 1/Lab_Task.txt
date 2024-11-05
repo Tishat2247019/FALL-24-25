@@ -1,0 +1,15 @@
+1. Print a string "Assembly Language".
+
+2. Show one user input and one predefined input
+
+
+3. Read two character and display it new line
+
+Sample Output:
+AB
+AB
+
+4. Read a character A and display it A to Z times on the next line. Hints: use inc instructions
+
+sample output:
+A to Z.
