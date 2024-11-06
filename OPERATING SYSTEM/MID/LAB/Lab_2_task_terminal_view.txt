@@ -1,0 +1,152 @@
+$ pwd
+/home/user
+~$ mkdir Lab2
+~$ cd Lab2/
+~/Lab2$ touch file1.txt
+~/Lab2$ mkdir mydir
+~/Lab2$ cd mydir/
+~/Lab2/mydir$ echo Hello, World! > output.txt
+~/Lab2/mydir$ cat output.txt 
+Hello, World!
+~/Lab2/mydir$ pwd
+/home/user/Lab2/mydir
+~/Lab2/mydir$ touch file2.txt
+~/Lab2/mydir$ echo this is file2 line >> file2.txt 
+~/Lab2/mydir$ cat file2.txt output.txt > combined.txt
+~/Lab2/mydir$ cat combined.txt | less
+
+[1]+  Stopped                 cat combined.txt | less
+~/Lab2/mydir$ touch example.txt 
+~/Lab2/mydir$ echoe this is the contenct of example txt file >> example.txt
+bash: echoe: command not found
+~/Lab2/mydir$ cat exammple.txt | less
+cat: exammple.txt: No such file or directory
+
+[2]+  Stopped                 cat exammple.txt | less
+~/Lab2/mydir$ echo this is the contenct of example txt file >> example.txt
+~/Lab2/mydir$ cat exammple.txt | less
+cat: exammple.txt: No such file or directory
+
+[3]+  Stopped                 cat exammple.txt | less
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  output.txt
+~/Lab2/mydir$ cat example.txt 
+this is the contenct of example txt file
+~/Lab2/mydir$ cat example.txt | less
+
+[4]+  Stopped                 cat example.txt | less
+~/Lab2/mydir$ echo file2.txt >> output.txt 
+~/Lab2/mydir$ cat output.txt 
+Hello, World!
+file2.txt
+~/Lab2/mydir$ cat file2.txt > output.txt 
+~/Lab2/mydir$ cat output.txt 
+this is file2 line
+~/Lab2/mydir$ cat file2.txt 
+this is file2 line
+~/Lab2/mydir$ echo cat file2.txt >> output.txt
+~/Lab2/mydir$ cat output.txt
+this is file2 line
+cat file2.txt
+~/Lab2/mydir$ cat file2.txt >> output.txt 
+~/Lab2/mydir$ cat output.txt 
+this is file2 line
+cat file2.txt
+this is file2 line
+~/Lab2/mydir$ touch jpt.txt
+~/Lab2/mydir$ echo this is the first line of jpt txt >> jpt.txt
+~/Lab2/mydir$ cat -n jpt.txt 
+     1  this is the first line of jpt txt
+~/Lab2/mydir$ cat >> jpt.txt
+this is the scond line
+
+this is the fourth line^Z
+[5]+  Stopped                 cat >> jpt.txt
+~/Lab2/mydir$ cat jpt.txt 
+this is the first line of jpt txt
+this is the scond line
+
+~/Lab2/mydir$ cat -n jpt.txt 
+     1  this is the first line of jpt txt
+     2  this is the scond line
+     3
+~/Lab2/mydir$ touch .hiddenfile
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ sort output.txt 
+cat file2.txt
+this is file2 line
+this is file2 line
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ cd ..
+~/Lab2$ ls
+file1.txt  mydir
+~/Lab2$ cp file1.txt file1_backup.txt
+~/Lab2$ cat file1_backup.txt 
+~/Lab2$ cd mydir/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ cd ..
+~/Lab2$ cd mydir/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ cp file2.txt output.txt ../
+~/Lab2/mydir$ cd .
+~/Lab2/mydir$ cd ..
+~/Lab2$ ls
+file1.txt  file1_backup.txt  file2.txt  mydir  output.txt
+~/Lab2$ mv file1_backup.txt ./mydir/
+~/Lab2$ cd mydir/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file1_backup.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ mv file1_backup.txt 
+mv: missing destination file operand after 'file1_backup.txt'
+Try 'mv --help' for more information.
+~/Lab2/mydir$ rm  file1_backup.txt 
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ mkdir mydir
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  mydir  output.txt
+~/Lab2/mydir$ cd mydir/
+~/Lab2/mydir/mydir$ cd ..
+~/Lab2/mydir$ rm -d mydir/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ mkdir tesdir
+~/Lab2/mydir$ cd tesdir/
+~/Lab2/mydir/tesdir$ touch a.txt b.txt c.txt
+~/Lab2/mydir/tesdir$ ls
+a.txt  b.txt  c.txt
+~/Lab2/mydir/tesdir$ cd ..
+~/Lab2/mydir$ rm -r tesdir/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  file2.txt  jpt.txt  output.txt
+~/Lab2/mydir$ rm file2.txt output.txt 
+~/Lab2/mydir$ ls
+combined.txt  example.txt  jpt.txt
+~/Lab2/mydir$ man mkdir
+
+[6]+  Stopped                 env LESS_TERMCAP_mb=$(printf "\e[1;31m") LESS_TERMCAP_md=$(printf "\e[1;31m") LESS_TERMCAP_me=$(printf "\e[0m") LESS_TERMCAP_se=$(printf "\e[0m") LESS_TERMCAP_so=$(printf "\e[1;44;33m") LESS_TERMCAP_ue=$(printf "\e[0m") LESS_TERMCAP_us=$(printf "\e[1;32m") man "$@"
+~/Lab2/mydir$ mkdir -p dt1/dt2/dt3/dt4
+~/Lab2/mydir$ ls
+combined.txt  dt1  example.txt  jpt.txt
+~/Lab2/mydir$ rmdir -r dt1/
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+~/Lab2/mydir$ ls
+combined.txt  dt1  example.txt  jpt.txt
+~/Lab2/mydir$ ls dt1/
+dt2
+~/Lab2/mydir$ rm -r dt1/
+~/Lab2/mydir$ ls
+combined.txt  example.txt  jpt.txt
+~/Lab2/mydir$ history >> history.txt
+~/Lab2/mydir$ cat combined.txt | sort
+Hello, World!
+this is file2 line
+~/Lab2/mydir$ sort combined.txt
+Hello, World!
+this is file2 line
+~/Lab2/mydir$ 
