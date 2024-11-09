@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Form</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="">
+        <table style="width: 400px; height:350px">
+            <tr>
+                <th colspan="3">
+                    PERSON PROFILE
+                </th>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input style="width: 40px;" type="number"> / <input style="width: 40px;" type="number"> / <input
+                        style="width: 40px;" type="number"> &nbsp; (dd/mm/yyy)
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>Blood group</td>
+                <td> <select name="" id="">
+                        <option value="">A+</option>
+                        <option value="">B+</option>
+                        <option value="">AB+</option>
+                    </select></td>
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <td>Degree</td>
+
+                <td> <input type="checkbox">SSC
+                    <input type="checkbox">HSC
+                    <input type="checkbox">Bsc
+                </td>
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td>
+                    <input type="file">
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3"><br></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
