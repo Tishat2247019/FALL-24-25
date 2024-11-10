@@ -1,0 +1,8 @@
+1.Operating system is interrupt driven - explain
+2.Write the defferences among program,process, thread
+3.Explain multiprogramming, multitasking, mutlithreading
+4. what is kernel, bootstrap, system call, interrupt, firmware, 
+5. types of multiprocessing,types of interrupt, interrupt service routine
+6. clustering system -> different system working together , assymetric,symmetric
+7. What is data caching -> moving frequent used data to main,volatile, faster memory. Cache is usually situated
+in closer to cpu. Cache is of three types. l1, l2, l3. l1 is mot closer to the cpu
