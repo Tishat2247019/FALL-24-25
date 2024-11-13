@@ -1,0 +1,86 @@
+1. To display the current date in AM / PM format
+  = date "+%r"
+2. To help for a command
+  = cd --help
+3. To diplay the current month calender with Sunday as first day
+  = ncal -dS
+4. To execute a opration in the cli
+  = echo "(3 + 4) * 5)
+3. To count the total number of lines, words, characters in a file
+  = wc a.txt
+4. For display only the number of characters
+  = wc -c a.txt
+  = wc -l a.txt
+  = wc -l w a.txt
+5. For display content with line numbers
+  = nl a.txt
+if we want to increment the number as 1, 3, 5, 7
+  = nl -i2 a.txt
+6. to sort a file in alphabetic order
+  = sort a.txt
+7. to sort in reverse order
+  = sort -r a.txt
+8. to remove duplicates
+  = sort -u a.txt
+9. sort based on the 2nd word of each line
+ = sort -k 2 a.txt ->2 is the filed number(counts empty)
+10. to sort based on 3rd no character of 2 no field
+ = sort -k 2.3 a.txt
+11. to display first 10 lines of a file
+ = head a.txt
+12. to displaly last 10 lines of a file
+ = tail a.txt
+13. to display first 6 characters of a file
+ = head -6c a.txt
+14. to display the first 5 lines of a file
+ = head -5 a.txt
+15.to display first 5 lines of multiple files in same command
+ = head -5 a.txt b.txt
+16. to cut the words after comma
+ =  cut -c, -f 1,3 a.txt
+17. to cut 1st to 4th character
+ = cut -c 1-4 a.txt
+18. to start the cut from the 5th character
+ = cut -c 5- a.txt
+19.to display 2 files at one time(merge)
+  = paste f1.txt f2.txt
+20. to add a comma between the lines
+  = paste -d "," f1.txt f2.txt 
+21. to search for a specific word in a file(display the whole line)
+  = grep -i "World" a.txt (do not case sensitive)
+22.  to search for a specific word in a file(display the whle ine)
+  = grep "World" a.txt (case sensitive)
+23. to get the count of a word(exactly match) in a file
+  = grep -c "World" a.txt
+24. to get the count of a word(just match, not exactly) in a file
+ = grep -c -i "World" a.txt
+25. to display a particlar word in a file
+ = grep -o "World" a.txt
+26. to display the contents of a file except for a specific word
+ = grev -v "World" a.txt
+27. to dsiplay the file permissions
+ = ls -la
+
+
+-rw-r-r--
+rw = user
+r = group 
+r = others
+
+r = read = 4
+w = write = 2
+x = execute = 1
+
+rw-r--r
+rw-: 4 + 2 + 0 = 6
+r-- : 4 + 0 + 0 = 4
+r--: 4 + 0 + 0 = 4
+
+chmod ==> to set the permissions
+chmod ==> change mod
+chmod 644 f1.txt
+drw===> d for director
+
+chmod 756 x.txt
+
+
