@@ -1,0 +1,165 @@
+Task 2
+-----------
+
+.model small
+.stack
+.data
+
+.code
+main proc
+    mov ax, @data       ; initialize data segment
+    mov ds, ax
+
+    ; task 2: compare AL and BL and display the smaller value
+    mov al, 4           ; example value for AL
+    mov bl, 2           ; example value for BL
+
+    ; compare AL with BL
+    mov ah, 2           ; DOS function for displaying a character
+    cmp al, bl          ; compare AL and BL
+    jnbe else_          ; jump to ELSE_ if AL > BL
+    mov dl, al          ; if AL <= BL, load AL into DL
+    jmp display         ; jump to DISPLAY
+
+else_:
+    mov dl, bl          ; if AL > BL, load BL into DL
+
+display:
+    int 21h             ; display the value in DL
+
+exit:
+    mov ah, 4ch         ; terminate program
+    int 21h
+
+main endp
+end main
+
+
+
+Task 3
+----------
+
+.model small
+.stack
+.data
+
+.code
+main proc
+    mov ax, @data       ; initialize data segment
+    mov ds, ax
+
+    ; task 3: check if DL is an uppercase letter and display it
+    mov dl, 'B'         ; example value for DL (ASCII code of 'B')
+
+    cmp dl, 'A'         ; check if DL >= 'A'
+    jl skip_display     ; jump if DL < 'A'
+    cmp dl, 'Z'         ; check if DL <= 'Z'
+    jg skip_display     ; jump if DL > 'Z'
+
+    ; if DL is in the range 'A' to 'Z', display it
+    mov ah, 2           ; DOS function for displaying a character
+    int 21h
+
+skip_display:
+
+exit:
+    mov ah, 4ch         ; terminate program
+    int 21h
+
+main endp
+end main
+
+Task 4
+------
+
+.model small
+.stack
+.data
+
+.code
+main proc
+    mov ax, @data       ; initialize data segment
+    mov ds, ax
+
+    ; Initialize example values for AX, BX, CX
+    mov ax, 5           ; example value for AX
+    mov bx, 3           ; example value for BX
+    mov cx, 8           ; example value for CX
+
+    ; Compare AX with BX
+    cmp ax, bx
+    jge skip_if_1       ; jump to skip_if_1 if AX >= BX
+
+    ; Inside IF AX < BX block, compare BX with CX
+    cmp bx, cx
+    jge skip_if_2       ; jump to skip_if_2 if BX >= CX
+
+    ; If BX < CX, set AX to 0
+    mov ax, 0
+    jmp exit_program    ; jump to exit
+
+skip_if_2:
+    ; If BX >= CX, set BX to 0
+    mov bx, 0
+    jmp exit_program    ; jump to exit
+
+skip_if_1:
+    ; If AX >= BX, do nothing and exit
+    jmp exit_program
+
+exit_program:
+    ; Exit the program
+    mov ah, 4ch         ; terminate program
+    int 21h
+
+main endp
+end main
+
+
+Task - 5
+--------
+.model small
+.stack
+.data
+
+.code
+main proc
+    mov ax, @data       ; initialize data segment
+    mov ds, ax
+
+    ; Initialize example values for AX, BX, CX
+    mov ax, 5           ; example value for AX
+    mov bx, 3           ; example value for BX
+    mov cx, 8           ; example value for CX
+
+    ; Compare AX with BX (AX < BX)
+    cmp ax, bx
+    jge skip_or         ; jump to skip_or if AX >= BX
+
+    ; If AX < BX, set DX to 0 and jump to exit
+    mov dx, 0
+    jmp exit_program    ; jump to exit
+
+skip_or:
+    ; Compare BX with CX (BX < CX)
+    cmp bx, cx
+    jge set_one         ; jump to set_one if BX >= CX
+
+    ; If BX < CX, set DX to 0
+    mov dx, 0
+    jmp exit_program    ; jump to exit
+
+set_one:
+    ; If neither condition is true, set DX to 1
+    mov dx, 1
+
+exit_program:
+    ; Exit the program
+    mov ah, 4ch         ; terminate program
+    int 21h
+
+main endp
+end main
+
+
+
