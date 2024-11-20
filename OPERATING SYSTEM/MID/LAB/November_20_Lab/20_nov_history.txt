@@ -1,0 +1,607 @@
+    1  ls
+    2  pwd
+    3  history
+    4  date
+    5  cal
+    6  cal -yy
+    7  cal -y
+    8  man -l
+    9  man cal
+   10  help cal
+   11  uname -r
+   12  uname -m
+   13  clear
+   14  history
+   15  help cal
+   16  ls
+   17  pwd
+   18  man touch
+   19  mkdir tishat
+   20  ls
+   21  cd tishat
+   22  dir ..
+   23  cd ..
+   24  ls
+   25  ls -l
+   26  ls -la
+   27  cd tishat/
+   28  pwed
+   29  pwd
+   30  touch newfile.txt
+   31  ls
+   32  echo "this is a new file " > another_file.txt
+   33  cat another_file.txt
+   34  cat newfile.txt 
+   35  nano newfile.txt 
+   36  echo "this is another line" >> another_file.txt
+   37  cat another_file.txt
+   38  ls -a
+   39  man mv
+   40  ls
+   41  ls *.txt
+   42  man
+   43  man man
+   44  ls >> info.txt
+   45  cat info.txt
+   46  cat info.txt 
+   47  ls
+   48  ls >> info.txt
+   49  cat info.txt
+   50  ls
+   51  ls >> fill.txt
+   52  cat fill.txt
+   53  pwd
+   54  pwd >> pwd.txt
+   55  cat pwd.txt 
+   56  ls
+   57  cat fill.txt + info.txt
+   58  cat fill.txt info.txt
+   59  ls
+   60  cat another_file.txt 
+   61  cat fill.txt 
+   62  cat pwd.txt 
+   63  cat another_file.txt fill.txt pwd.txt >> new_fil_combine.txt
+   64  cat new_fil_combine.txt 
+   65  dir
+   66  ls dir
+   67  dir
+   68  man dir
+   69  man cal
+   70  hitory
+   71  histroy
+   72  history 
+   73  cat pwd.txt 
+   74  ls
+   75  ls -l
+   76  ls -la
+   77  cd ..
+   78  pwd
+   79  uname -r
+   80  uname -m
+   81  mkdir new_folder
+   82  cd new_folder/
+   83  ls
+   84  ls -la
+   85  touch file1.txt
+   86  echo "this is the first line" >> file1.txt
+   87  echo "this is the second line" >> file1.txt
+   88  cat file1.txt
+   89  touch file2.txt file3.txt
+   90  ls *.txt
+   91  mkdir folder1/sub_folder1/
+   92  mkdir folder1/sub_folder1
+   93  mkdir folder1\sub_folder1
+   94  dir
+   95  lst
+   96  ls
+   97  man mkdir
+   98  man delete
+   99  man mkdir
+  100  rmdir folder1sub_folder1/
+  101  lu
+  102  ls
+  103  uname
+  104  mkdir -p folder1/sub_folder1/sub_folder2
+  105  dir
+  106  cd folder1/
+  107  cd sub_folder1/
+  108  cd sub_folder2/
+  109  man mkdir
+  110  cd ..
+  111  uname -r
+  112  man touch
+  113  touch .hidden.txt
+  114  ls
+  115  ls -a
+  116  ls >> output.txt
+  117  uname
+  118  lshw
+  119  sudo lshw
+  120  lshw
+  121  man uname
+  122  uname -o
+  123  uname -0
+  124  man uname
+  125  uname -a
+  126  uname -ll
+  127  man uname
+  128  inxi -F
+  129  whoami
+  130  hwinfo
+  131  man uname
+  132  uname -a >> log.txt
+  133  cat log.txt
+  134  history
+  135  history >> command_history.txt
+  136  pwdd
+  137  pwd
+  138  clear
+  139  pwd >> new.txt
+  140  cat new.txt
+  141  cat > new.txt
+  142  cat new.txt
+  143  pwd
+  144  cat > new.txt
+  145  ls
+  146  cat new.tst
+  147  cat new.txt
+  148  ls
+  149  mkdir folder1
+  150  history
+  151  pwd
+  152  ls
+  153  cd new_folder/
+  154  ls
+  155  mkdir merge_folder
+  156  touch a1.txt
+  157  echo Hello >> a1.txt
+  158  touch a2.txt
+  159  echo World >> a2.txt
+  160  cat a1.txt a2.txt
+  161  cat a1.txt a2.txt > merge_file.txt
+  162  cat merge_f
+  163  cat merge_file.txt
+  164  touch a3.txt
+  165  echo Hello world >> a3.txt
+  166  cat a3.txt merge.txt >> merge.txt
+  167  echo newline >> merge.txt
+  168  cat merge.txt
+  169  cat merge.txt  
+  170  cat merge.txt | less
+  171  cat -n merge.txt
+  172  cat merge.txt | less
+  173  touch .hidden.txt
+  174  echo Hello hidden.txt
+  175  cat hidden.txt
+  176  ls
+  177  ls -a
+  178  echo My nmae is tishat >> merge.txt
+  179  cat merge.txt
+  180  echo Hello > hidden.txt
+  181  cat hidden.txt
+  182  ls
+  183  ls -a
+  184  echo Hello > .hidden.txt
+  185  cat .hidde.txt
+  186  touch without_ext
+  187  cat without_ext 
+  188  ls
+  189  echo hello world >> without_ext 
+  190  cat without_ext 
+  191  cat >> without_ext 
+  192  cat without_ext 
+  193  cat merge.txt
+  194  echo this is new line >> merge.txt
+  195  cat merge.txt
+  196  cat >> merge.txt
+  197  cat merge.txt
+  198  cat merge.txt | less
+  199  ls
+  200  ls folder1/
+  201  ls
+  202  pwd
+  203  pwd
+  204  cd-
+  205  cd -
+  206  cd new_folder/
+  207  ls
+  208  mkdir dt1
+  209  mkdir dt2
+  210  cd dt1
+  211  touch xyz.txt
+  212  echo this is the first lne >> xyz.txt 
+  213  cp xyz.txt ../dt2
+  214  ls ../dt2
+  215  cat ../dt2/xyz.txt 
+  216  mkdir dt3
+  217  cp dt1 dt3/
+  218  cd ..
+  219  mkdir dt3
+  220  cp dt1 dt3
+  221  man cp
+  222  cp -r dt1 dt3
+  223  cd dt1
+  224  cp -r ../dt3/
+  225  cp -r .  ../dt3/
+  226  cd ..
+  227  ls
+  228  cat merge.txt
+  229  mv merge.txt merge_rename.txt
+  230  cat merge_rename.txt 
+  231  man mv
+  232  cd dt1
+  233  ls
+  234  mv xyz.txt ../dt2
+  235  ls
+  236  ls ../dt2
+  237  mv ../dt2/ .
+  238  ls
+  239  ls ../
+  240  cd ..
+  241  ls 
+  242  ls -n
+  243  ls -a
+  244  ls dt1
+  245  ls dt3
+  246  mv dt3
+  247  rm dte
+  248  rm dt3
+  249  rm -r dt3
+  250  ls
+  251  pwd
+  252  mkdir Lab2
+  253  cd Lab2/
+  254  touch file1.txt
+  255  mkdir mydir
+  256  cd mydir/
+  257  echo Hello, World! > output.txt
+  258  cat output.txt 
+  259  pwd
+  260  touch file2.txt
+  261  echo this is file2 line >> file2.txt 
+  262  cat file2.txt output.txt > combined.txt
+  263  cat combined.txt | less
+  264  touch example.txt 
+  265  echoe this is the contenct of example txt file >> example.txt
+  266  cat exammple.txt | less
+  267  echo this is the contenct of example txt file >> example.txt
+  268  cat exammple.txt | less
+  269  ls
+  270  cat example.txt 
+  271  cat example.txt | less
+  272  echo file2.txt >> output.txt 
+  273  cat output.txt 
+  274  cat file2.txt > output.txt 
+  275  cat output.txt 
+  276  cat file2.txt 
+  277  echo cat file2.txt >> output.txt
+  278  cat output.txt
+  279  cat file2.txt >> output.txt 
+  280  cat output.txt 
+  281  touch jpt.txt
+  282  echo this is the first line of jpt txt >> jpt.txt
+  283  cat -n jpt.txt 
+  284  cat >> jpt.txt
+  285  cat jpt.txt 
+  286  cat -n jpt.txt 
+  287  touch .hiddenfile
+  288  ls
+  289  sort output.txt 
+  290  ls
+  291  cd ..
+  292  ls
+  293  cp file1.txt file1_backup.txt
+  294  cat file1_backup.txt 
+  295  cd mydir/
+  296  ls
+  297  cd ..
+  298  cd mydir/
+  299  ls
+  300  cp file2.txt output.txt ../
+  301  cd .
+  302  cd ..
+  303  ls
+  304  mv file1_backup.txt ./mydir/
+  305  cd mydir/
+  306  ls
+  307  mv file1_backup.txt 
+  308  rm  file1_backup.txt 
+  309  ls
+  310  mkdir mydir
+  311  ls
+  312  cd mydir/
+  313  cd ..
+  314  rm -d mydir/
+  315  ls
+  316  mkdir tesdir
+  317  cd tesdir/
+  318  touch a.txt b.txt c.txt
+  319  ls
+  320  cd ..
+  321  rm -r tesdir/
+  322  ls
+  323  rm file2.txt output.txt 
+  324  ls
+  325  man mkdir
+  326  mkdir -p dt1/dt2/dt3/dt4
+  327  ls
+  328  rmdir -r dt1/
+  329  ls
+  330  ls dt1/
+  331  rm -r dt1/
+  332  ls
+  333  history >> history.txt
+  334  cat combined.txt | sort
+  335  sort combined.txt
+  336  history >> Linux_terminal_practice.txt
+  337  ls
+  338  pwed
+  339  pwd
+  340  mkdir Lab4
+  341  cd Lab4
+  342  pwd
+  343  date
+  344  man date
+  345  cal November
+  346  cal 08 2000
+  347  cal 11 2024
+  348  ncal -bs
+  349  ncal -b s
+  350  cal -bs
+  351  cal 2000
+  352  ncal -bS
+  353  ncal
+  354  ncal -bSat
+  355  nca -S
+  356  man ncal
+  357  ncal
+  358  ncal -bS
+  359  ncal
+  360  date t%4
+  361  date t%r
+  362  date t %r
+  363  date
+  364  date t
+  365  date %r
+  366  data t% r
+  367  echo "(3 + 4) * 5" | bc
+  368  man date
+  369  date %r
+  370  date "%r"
+  371  date "+%r"
+  372  clean
+  373  clear
+  374  cd --help
+  375  ls
+  376  echo This is the first line > a.txt
+  377  ls
+  378  cat a.txt
+  379  cat >> a.txt
+  380  cat a.txt
+  381  cat >> a.txt
+  382  cat a.txt
+  383  wc a.txt
+  384  wc -c a.txt
+  385  wc -l a.txt
+  386  wc -l w a.txt
+  387  wc - w a.txt
+  388  nl a.txt
+  389  nl -i2 a.txt
+  390  sort a.txt
+  391  sort -r a.txt
+  392  sort -u a.txt
+  393  cat >> a.txt
+  394  sort a.txt
+  395  sort -u a.txt
+  396  sort -k 2 a.txt
+  397  sort -k 2.3 a.txt
+  398  head a.txt
+  399  tail a.txt
+  400  head -6c a.txt
+  401  head -5 a.txt
+  402  head -5 a.txt b.txt
+  403  echo "tsdf" > b.txt
+  404  head -5 a.txt b.txt
+  405  cut -d, -f 1, 2 a.txt
+  406  cd -
+  407  cd Lab4
+  408  cut -d, -f 1,2 a.txt
+  409  cut -d, -f 1,3 a.txt
+  410  cut -c, -f 1,3 a.txt
+  411  cut -d, -c 1,3 a.txt
+  412  cut -d, -c 1-4 a.txt
+  413  cut -c 1-4 a.txt
+  414  cut -c 5- a.txt
+  415  cat > f1.txt
+  416  cat > f2.txt
+  417  cat f2.txt
+  418  echo DragonFruit >> f2.txt
+  419  cat f2.txt
+  420  paste f1.txt f2.txt
+  421  paste -d "," f1.txt f2.txt
+  422  grep -i "World" a.txt
+  423  grep "World" a.txt
+  424  grep -c "World" a.txt
+  425  grep -c -i "World" a.txt
+  426  grep -o "World" a.txt
+  427  grep -v "World" a.txt
+  428  chmod 777 a.txt
+  429  ls
+  430  ls -a
+  431  ls -r
+  432  ls -lsa
+  433  ls -la
+  434  pwd
+  435  ls
+  436  ls -a
+  437  mkdirj TestFolder
+  438  mkdir TestFolder
+  439  cd TestFolder/
+  440  touch test.txt
+  441  mv test.txt example.txt
+  442  ls
+  443  man copy
+  444  man cp
+  445  cp example.txt copy_example.txt
+  446  ls
+  447  man rm
+  448  rm copy_example.txt 
+  449  ls
+  450  mv example.txt ../
+  451  ls
+  452  cd ..
+  453  ls
+  454  cat example.txt 
+  455  cat >> example.txt
+  456  cat example.txt 
+  457  cd TestFolder/
+  458  echo Hello, World! > data.txt
+  459  cat data.txt 
+  460  cat > data.txt
+  461  cat data.txt
+  462  rm data.txt 
+  463  echo Hello, World!
+  464  cat >> data.txt
+  465  cat data.txt
+  466  date
+  467  time
+  468  date -r
+  469  date -u
+  470  mkdir -r Folder1/Subfolder/
+  471  mkdir -d Folder1/Subfolder/
+  472  man mkdir
+  473  mkdir -p Folder1/Subfolder/
+  474  ls
+  475  cd Folder1/
+  476  echo "sahdf" >> new.txt
+  477  ls
+  478  cd ..
+  479  rm Folder1/
+  480  rm -r Folder1/
+  481  ls
+  482  history >> history.txt
+  483  ifconfig
+  484  ping www.google.com
+  485  top
+  486  ps -all
+  487  ps aux
+  488  pc -all
+  489  ps -all
+  490  cat >> numbers.txt
+  491  rm numbers.txt 
+  492  cat >> numbers.txt
+  493  sort numbers.txt 
+  494  cat numbers.txt | sort
+  495  whoami
+  496  echo apple, banana, cherry > data.txt
+  497  rm data.txt
+  498  grep "4" numbers.txt
+  499  rm numbers.txt 
+  500  whoami
+  501  echo apple, banana, cherry > data.txt
+  502  cat data.txt
+  503  sort data.txt
+  504  sort data.txt >> sorted_data.txt
+  505  ls
+  506  #comment
+  507  #Finder lines conatining the word "banana" in"data.txt"
+  508  grep "banana" data.txt
+  509  #Display the contnts of "sorted_data.txt"
+  510  cat sroted_data.txt
+  511  cat oroted_data.txt
+  512  cat sorted_data.txt 
+  513  cd Project/
+  514  mkdir Project
+  515  cd Project/
+  516  touch READE.txt
+  517  cd ..
+  518  #Delete both "data.txt" and "sorted_data.txt"
+  519  rm data.txt sorted_data.txt 
+  520  cd Project/
+  521  date
+  522  ls
+  523  #Dispay the current date and time
+  524  date
+  525  #Display all the contents of current directory
+  526  ls
+  527  mv READE.txt README.txt
+  528  ls
+  529  cd ..
+  530  rm -r Prj
+  531  rm -r Pr
+  532  rm -r Project/
+  533  pwd
+  534  ls
+  535  cd TestFolder/
+  536  ls
+  537  mkdir Project && cd ./Project/ && touch README.txt
+  538  ls
+  539  #Display current data and time, and then list all files in the current director
+  540  data && ls
+  541  date
+  542  ls
+  543  ps
+  544  ps -all
+  545  data && ls
+  546  history
+  547  #Create a director "TestDir", navigate into it , create a file "test.txt" with contenct "Hello", then diplay the file conent
+  548  mkdir TestDir && cd TestDir && echo Hello > test.txt && cat test.txt
+  549  ls
+  550  ls *test*
+  551  touch new.txt
+  552  ls *test*
+  553  ls *tet*
+  554  ls *test*
+  555  #fint and display files only those containg "test" in theiry name
+  556  ls *test*
+  557  ls -l *test*
+  558  ls *test*
+  559  #fint and display files only those containg "test" in theiry name
+  560  ls | grep "test"
+  561  ls | sort
+  562  touch a.txt
+  563  ls | sort
+  564  mkdir xx
+  565  ls | sort
+  566  mkdir pp
+  567  ls | sort
+  568  ls | sort --ignore-case
+  569  #to sort the output without case sensitivity
+  570  ls | sort --ignore-case
+  571  tput rmcup
+  572  cd ..
+  573  rm -r T
+  574  rm -r TestDir/
+  575  cd ..
+  576  rm -r TestFolder
+  577  rm -r Project/
+  578  mkdir Project && cd Project && touch README.txt
+  579  date
+  580  time
+  581  ls
+  582  #create a directore "TestDir", navigate inot it, create a file "test.txt" with content "Hello", then diplay the file content
+  583  mkdir TestDire && cd TestDir && echo Hello > test.txt && cat test.txt
+  584  mkdir TestDir && cd TestDir && echo Hello > test.txt && cat test.txt
+  585  ls
+  586  cd TestFolder/Project/
+  587  ls
+  588  cd TestDir
+  589  ls
+  590  ls| grep "test"
+  591  ls *test*
+  592  touch a.txt b.txt e.txt d.txt 
+  593  ls | sort
+  594  ls | sort --ignore-case
+  595  cat >> a.txt
+  596  cat >> b.txt
+  597  cat a.txt b.txt
+  598  head a.txt
+  599  #using head to display the first 10 lines of a file
+  600  head a.txt
+  601  #using tail to display the last 10 line of a file
+  602  taile a.txt
+  603  tail a.txt
+  604  uname
+  605  #to display the current user
+  606  uname
+  607  history >> 20_nov_history.txt

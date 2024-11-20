@@ -1,0 +1,351 @@
+~$ pwd
+/home/user
+~$ ls
+2024-11-06-terminal-1.term  Lab4             Linux_terminal.term          OS_LAB_20_Nov.term  new.txt     termnal.term
+Lab2                        Lab_2_Task.term  Linux_terminal_practice.txt  Os_Lab_13_Nov.term  new_folder  tishat
+~$ ls -a
+.                                   .2024-11-20-file-1.term-0.term  .bash_profile           .smc                        Lab4                         new.txt
+..                                  .Lab_2_Task.term-0.term         .bashrc                 .snapshots                  Lab_2_Task.term              new_folder
+.2024-11-06-file-1.term-0.term      .Linux_terminal.term-0.term     .compute-server.syncdb  .ssh                        Linux_terminal.term          termnal.term
+.2024-11-06-terminal-1.term-0.term  .OS_LAB_20_Nov.term-0.term      .jupyter-blobs-v0.db    .termnal.term-0.term        Linux_terminal_practice.txt  tishat
+.2024-11-06-terminal-2.term-0.term  .Os_Lab_13_Nov.term-0.term      .lesshst                2024-11-06-terminal-1.term  OS_LAB_20_Nov.term
+.2024-11-13-file-1.term-0.term      .bash_history                   .local                  Lab2                        Os_Lab_13_Nov.term
+~$ mkdirj TestFolder
+bash: mkdirj: command not found
+~$ mkdir TestFolder
+~$ cd TestFolder/
+~/TestFolder$ touch test.txt
+~/TestFolder$ mv test.txt example.txt
+~/TestFolder$ ls
+example.txt
+~/TestFolder$ man copy
+~/TestFolder$ man cp
+~/TestFolder$ cp example.txt copy_example.txt
+~/TestFolder$ ls
+copy_example.txt  example.txt
+~/TestFolder$ man rm
+
+[1]+  Stopped                 env LESS_TERMCAP_mb=$(printf "\e[1;31m") LESS_TERMCAP_md=$(printf "\e[1;31m") LESS_TERMCAP_me=$(printf "\e[0m") LESS_TERMCAP_se=$(printf "\e[0m") LESS_TERMCAP_so=$(printf "\e[1;44;33m") LESS_TERMCAP_ue=$(printf "\e[0m") LESS_TERMCAP_us=$(printf "\e[1;32m") man "$@"
+~/TestFolder$ rm copy_example.txt 
+~/TestFolder$ ls
+example.txt
+~/TestFolder$ mv example.txt ../
+~/TestFolder$ ls
+~/TestFolder$ cd ..
+~$ ls
+2024-11-06-terminal-1.term  Lab4             Linux_terminal.term          OS_LAB_20_Nov.term  TestFolder   new.txt     termnal.term
+Lab2                        Lab_2_Task.term  Linux_terminal_practice.txt  Os_Lab_13_Nov.term  example.txt  new_folder  tishat
+~$ cat example.txt 
+~$ cat >> example.txt
+hello
+~$ cat example.txt 
+hello
+~$ cd TestFolder/
+~/TestFolder$ echo Hello, World! > data.txt
+~/TestFolder$ cat data.txt 
+Hello, World!
+~/TestFolder$ cat > data.txt
+Ths is a test
+^Z
+[2]+  Stopped                 cat > data.txt
+~/TestFolder$ cat data.txt
+Ths is a test
+~/TestFolder$ rm data.txt 
+~/TestFolder$ echo Hello, World!
+Hello, World!
+~/TestFolder$ cat >> data.txt
+This is a test.
+~/TestFolder$ cat data.txt
+This is a test.
+~/TestFolder$ date
+Wed Nov 20 08:22:32 UTC 2024
+~/TestFolder$ time
+
+real    0m0.000s
+user    0m0.000s
+sys     0m0.000s
+~/TestFolder$ date -r
+date: option requires an argument -- 'r'
+Try 'date --help' for more information.
+~/TestFolder$ date -u
+Wed Nov 20 08:23:43 UTC 2024
+~/TestFolder$ mkdir -r Folder1/Subfolder/
+mkdir: invalid option -- 'r'
+Try 'mkdir --help' for more information.
+~/TestFolder$ mkdir -d Folder1/Subfolder/
+mkdir: invalid option -- 'd'
+Try 'mkdir --help' for more information.
+~/TestFolder$ man mkdir
+
+[3]+  Stopped                 env LESS_TERMCAP_mb=$(printf "\e[1;31m") LESS_TERMCAP_md=$(printf "\e[1;31m") LESS_TERMCAP_me=$(printf "\e[0m") LESS_TERMCAP_se=$(printf "\e[0m") LESS_TERMCAP_so=$(printf "\e[1;44;33m") LESS_TERMCAP_ue=$(printf "\e[0m") LESS_TERMCAP_us=$(printf "\e[1;32m") man "$@"
+~/TestFolder$ mkdir -p Folder1/Subfolder/
+~/TestFolder$ ls
+Folder1  data.txt
+~/TestFolder$ cd Folder1/
+~/TestFolder/Folder1$ echo "sahdf" >> new.txt
+~/TestFolder/Folder1$ ls
+Subfolder  new.txt
+~/TestFolder/Folder1$ cd ..
+~/TestFolder$ rm Folder1/
+rm: cannot remove 'Folder1/': Is a directory
+~/TestFolder$ rm -r Folder1/
+~/TestFolder$ ls
+data.txt
+~/TestFolder$ history >> history.txt
+~/TestFolder$ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1440
+        inet 192.168.47.54  netmask 255.255.255.255  broadcast 192.168.47.54
+        ether 92:81:b5:b4:d7:50  txqueuelen 0  (Ethernet)
+        RX packets 4538  bytes 481331 (481.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3455  bytes 1113813 (1.1 MB)
+top - 08:34:14 up 16:11,  0 users,  load average: 1.53, 1.73, 1.64
+Tasks:  13 total,   1 running,   7 sleeping,   5 stopped,   0 zombie
+%Cpu(s): 26.0 us, 12.6 sy,  1.2 ni, 52.2 id,  6.5 wa,  0.0 hi,  1.5 si,  0.0 st
+MiB Mem :  32090.3 total,   1658.8 free,   4297.8 used,  26133.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.  25727.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                             
+      8 user      38  18  961140 100600  43588 S   2.3   0.3   0:29.57 node                                                                
+      1 user      20   0    2780    992    904 S   0.0   0.0   0:00.04 tini                                                                
+      7 user      38  18    2892    936    840 S   0.0   0.0   0:00.00 sh                                                                  
+    213 user      38  18   15440   9048   7480 S   0.0   0.0   0:00.01 sshd                                                                
+    304 user      38  18    7696   6788   3488 S   0.0   0.0   0:00.04 bash                                                                
+    347 user      38  18    7696   6892   3596 S   0.0   0.0   0:00.17 bash                                                                
+    571 user      38  18    7952   4948   2720 T   0.0   0.0   0:00.00 man                                                                 
+    579 user      38  18    3600   2328   2052 T   0.0   0.0   0:00.00 pager                                                               
+    686 user      38  18    3352   1024    936 T   0.0   0.0   0:00.00 cat                                                                 
+    777 user      38  18    7952   4908   2684 T   0.0   0.0   0:00.01 man                                                                 
+    785 user      38  18    3600   2344   2064 T   0.0   0.0   0:00.00 pager                                                               
+    883 user      38  18    7696   6744   3444 S   0.0   0.0   0:00.05 bash                                                                
+   1013 user      38  18    7812   3772   3160 R   0.0   0.0   0:00.00 top                                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+[4]+  Stopped                 top
+~/TestFolder$ ps -all
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 T  2001     571     347  0  98  18 -  1988 do_sig pts/1    00:00:00 man
+0 T  2001     579     571  0  98  18 -   900 do_sig pts/1    00:00:00 pager
+0 T  2001     686     347  0  98  18 -   838 do_sig pts/1    00:00:00 cat
+0 T  2001     777     347  0  98  18 -  1988 do_sig pts/1    00:00:00 man
+0 T  2001     785     777  0  98  18 -   900 do_sig pts/1    00:00:00 pager
+0 T  2001    1013     347  0  98  18 -  1953 do_sig pts/1    00:00:00 top
+0 R  2001    1014     347  0  98  18 -  1871 -      pts/1    00:00:00 ps
+~/TestFolder$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user           1  0.0  0.0   2780   992 ?        Ss   08:09   0:00 /cocalc/bin/tini -v -g -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJ
+user           7  0.0  0.0   2892   936 ?        SN   08:09   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME 
+user           8  2.0  0.3 960824 99840 ?        RNl  08:09   0:30 node --trace-warnings --trace-uncaught --optimize-for-size --gc-interval
+user         213  0.0  0.0  15440  9048 ?        SNs  08:09   0:00 sshd: /usr/sbin/sshd -D -p 2222 -h /tmp/.cocalc/ssh_host_rsa_key -o PidF
+user         304  0.0  0.0   7696  6788 pts/0    SNs+ 08:09   0:00 /bin/bash
+user         347  0.0  0.0   7696  6892 pts/1    SNs  08:10   0:00 /bin/bash
+user         571  0.0  0.0   7952  4948 pts/1    TN   08:16   0:00 man rm
+user         579  0.0  0.0   3600  2328 pts/1    TN   08:16   0:00 pager
+user         686  0.0  0.0   3352  1024 pts/1    TN   08:21   0:00 cat
+user         777  0.0  0.0   7952  4908 pts/1    TN   08:25   0:00 man mkdir
+user         785  0.0  0.0   3600  2344 pts/1    TN   08:25   0:00 pager
+user         883  0.0  0.0   7696  6744 pts/2    SNs+ 08:29   0:00 /bin/bash
+user        1013  0.0  0.0   7812  3772 pts/1    TN   08:34   0:00 top
+user        1024  0.0  0.0   7484  3252 pts/1    RN+  08:34   0:00 ps aux
+~/TestFolder$ pc -all
+bash: pc: command not found
+~/TestFolder$ ps -all
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 T  2001     571     347  0  98  18 -  1988 do_sig pts/1    00:00:00 man
+0 T  2001     579     571  0  98  18 -   900 do_sig pts/1    00:00:00 pager
+0 T  2001     686     347  0  98  18 -   838 do_sig pts/1    00:00:00 cat
+0 T  2001     777     347  0  98  18 -  1988 do_sig pts/1    00:00:00 man
+0 T  2001     785     777  0  98  18 -   900 do_sig pts/1    00:00:00 pager
+0 T  2001    1013     347  0  98  18 -  1953 do_sig pts/1    00:00:00 top
+0 R  2001    1026     347  0  98  18 -  1871 -      pts/1    00:00:00 ps
+~/TestFolder$ cat >> numbers.txt
+1
+2
+3
+4
+5
+~/TestFolder$ rm numbers.txt 
+~/TestFolder$ cat >> numbers.txt
+5
+1
+4
+3
+2
+~/TestFolder$ sort numbers.txt 
+1
+2
+3
+4
+5
+~/TestFolder$ cat numbers.txt | sort
+1
+2
+3
+4
+5
+~/TestFolder$ whoami
+user
+~/TestFolder$ echo apple, banana, cherry > data.txt
+~/TestFolder$ rm data.txt
+~/TestFolder$ grep "4" numbers.txt
+4
+~/TestFolder$ rm numbers.txt 
+~/TestFolder$ whoami
+user
+~/TestFolder$ echo apple, banana, cherry > data.txt
+~/TestFolder$ cat data.txt
+apple, banana, cherry
+~/TestFolder$ sort data.txt
+apple, banana, cherry
+~/TestFolder$ sort data.txt >> sorted_data.txt
+~/TestFolder$ ls
+data.txt  history.txt  sorted_data.txt
+~/TestFolder$ #comment
+~/TestFolder$ #Finder lines conatining the word "banana" in"data.txt"
+~/TestFolder$ grep "banana" data.txt
+apple, banana, cherry
+~/TestFolder$ #Display the contnts of "sorted_data.txt"
+~/TestFolder$ cat sroted_data.txt
+cat: sroted_data.txt: No such file or directory
+~/TestFolder$ cat oroted_data.txt
+cat: oroted_data.txt: No such file or directory
+~/TestFolder$ cat sorted_data.txt 
+apple, banana, cherry
+~/TestFolder$ cd Project/
+bash: cd: Project/: No such file or directory
+~/TestFolder$ mkdir Project
+~/TestFolder$ cd Project/
+~/TestFolder/Project$ touch READE.txt
+~/TestFolder/Project$ cd ..
+~/TestFolder$ #Delete both "data.txt" and "sorted_data.txt"
+~/TestFolder$ rm data.txt sorted_data.txt 
+~/TestFolder$ cd Project/
+~/TestFolder/Project$ date
+Wed Nov 20 08:51:53 UTC 2024
+~/TestFolder/Project$ ls
+READE.txt
+~/TestFolder/Project$ #Dispay the current date and time
+~/TestFolder/Project$ date
+Wed Nov 20 08:52:12 UTC 2024
+~/TestFolder/Project$ #Display all the contents of current directory
+~/TestFolder/Project$ ls
+READE.txt
+~/TestFolder/Project$ mv READE.txt README.txt
+~/TestFolder/Project$ ls
+README.txt
+~/TestFolder/Project$ cd ..
+~/TestFolder$ rm -r Prj
+rm: cannot remove 'Prj': No such file or directory
+~/TestFolder$ rm -r Pr
+rm: cannot remove 'Pr': No such file or directory
+~/TestFolder$ rm -r Project/
+~/TestFolder$ man mkdir
+~/TestFolder/Project/TestDir$ cd ..
+~/TestFolder/Project$ rm -r T
+rm: cannot remove 'T': No such file or directory
+~/TestFolder/Project$ rm -r TestDir/
+~/TestFolder/Project$ cd ..
+~/TestFolder$ rm -r TestFolder
+rm: cannot remove 'TestFolder': No such file or directory
+~/TestFolder$ rm -r Project/
+~/TestFolder$ mkdir Project && cd Project && touch README.txt
+~/TestFolder/Project$ date
+Wed Nov 20 09:27:05 UTC 2024
+~/TestFolder/Project$ time
+
+real    0m0.000s
+user    0m0.000s
+sys     0m0.000s
+~/TestFolder/Project$ ls
+README.txt
+contentolder/Project$ #create a directore "TestDir", navigate inot it, create a file "test.txt" with content "Hello", then diplay the file  
+~/TestFolder/Project$ mkdir TestDire && cd TestDir && echo Hello > test.txt && cat test.txt
+bash: cd: TestDir: No such file or directory
+~/TestFolder/Project$ mkdir TestDir && cd TestDir && echo Hello > test.txt && cat test.txt
+Hello
+~$ ls
+2024-11-06-terminal-1.term  Lab4             Linux_terminal.term          OS_LAB_20_Nov.term  TestFolder   new.txt     termnal.term
+Lab2                        Lab_2_Task.term  Linux_terminal_practice.txt  Os_Lab_13_Nov.term  example.txt  new_folder  tishat
+~$ cd TestFolder/Project/
+~/TestFolder/Project$ ls
+README.txt  TestDir  TestDire
+~/TestFolder/Project$ cd TestDir
+~/TestFolder/Project/TestDir$ ls
+test.txt
+~/TestFolder/Project/TestDir$ ls| grep "test"
+test.txt
+~/TestFolder/Project/TestDir$ ls *test*
+test.txt
+~/TestFolder/Project/TestDir$ touch a.txt b.txt e.txt d.txt 
+~/TestFolder/Project/TestDir$ ls | sort
+a.txt
+b.txt
+d.txt
+e.txt
+test.txt
+~/TestFolder/Project/TestDir$ ls | sort --ignore-case
+a.txt
+b.txt
+d.txt
+e.txt
+test.txt
+~/TestFolder/Project/TestDir$ cat >> a.txt
+hello
+world'
+NMy name
+is Tishat
+\f  
+~/TestFolder/Project/TestDir$ cat >> b.txt
+mango
+banana
+orange
+pineapple
+~/TestFolder/Project/TestDir$ cat a.txt b.txt
+hello
+world'
+NMy name
+is Tishat
+\f
+mango
+banana
+orange
+pineapple
+~/TestFolder/Project/TestDir$ head a.txt
+hello
+world'
+NMy name
+is Tishat
+\f
+~/TestFolder/Project/TestDir$ #using head to display the first 10 lines of a file
+~/TestFolder/Project/TestDir$ head a.txt
+hello
+world'
+NMy name
+is Tishat
+\f
+~/TestFolder/Project/TestDir$ #using tail to display the last 10 line of a file
+~/TestFolder/Project/TestDir$ taile a.txt
+bash: taile: command not found
+~/TestFolder/Project/TestDir$ tail a.txt
+hello
+world'
+NMy name
+is Tishat
+\f
+~/TestFolder/Project/TestDir$ uname
+Linux
+~/TestFolder/Project/TestDir$ #to display the current user
+~/TestFolder/Project/TestDir$ uname
+Linux
+~/TestFolder/Project/TestDir$ 
