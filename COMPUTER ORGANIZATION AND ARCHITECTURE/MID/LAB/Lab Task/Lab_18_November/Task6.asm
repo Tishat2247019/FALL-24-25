@@ -7,28 +7,28 @@ main proc
     mov ax, @data
     mov ds, ax
 
-    mov ax, 5        ; Example value for AX
-    mov bx, 3        ; Example value for BX
-    mov cx, 8        ; Example value for CX
+    mov ax, 5
+    mov bx, 3
+    mov cx, 8
 
-    cmp ax, bx       ; Compare AX with BX
-    jge check_bx_cx  ; Jump if AX >= BX
+    cmp ax, bx
+    jge check_bx_cx
 
-    mov ax, 0        ; Set AX to 0 if AX < BX
-    jmp exit_program ; Exit
+    mov ax, 0
+    jmp exit_program
 
 check_bx_cx:
-    cmp bx, cx       ; Compare BX with CX
-    jge set_cx_zero  ; Jump if BX >= CX
+    cmp bx, cx
+    jge set_cx_zero
 
-    mov bx, 0        ; Set BX to 0 if BX < CX
-    jmp exit_program ; Exit
+    mov bx, 0
+    jmp exit_program
 
 set_cx_zero:
-    mov cx, 0        ; Set CX to 0 if BX >= CX
+    mov cx, 0
 
 exit_program:
-    mov ah, 4ch      ; Terminate program
+    mov ah, 4ch
     int 21h
 
 main endp
