@@ -1,0 +1,964 @@
+    1  [200~sudo systemctl --user restart pulseaudio.service.
+    2  ~sudo systemctl --user restart pulseaudio.service
+    3  sudo systemctl --user restart pulseaudio.service
+    4  sudo apt-get update && sudo apt-get upgrade
+    5  q
+    6  clear
+    7  alsamixer
+    8  df -h
+    9  [200~gsettings set org.gnome.gnome-screenshot auto-save-directory "/media/tishat1528/LINUX Doc_s/Screenshots"~
+   10  gsettings set org.gnome.gnome-screenshot auto-save-directory "/media/tishat1528/LINUX Doc_s/Screenshots"
+   11  alsamixer
+   12  cd "/home/tishat1528/Desktop/" && g++ first.cpp -o first &&  "/home/tishat1528/Desktop/"first
+   13  sudo apt-get install ntfs-3g
+   14  sudo ntfsfix /dev/partitionName
+   15  sudo ntfsfix /dev/nvm0n1p5
+   16  sudo ntfsfix /dev/nvme0n1p5
+   17  sudo ntfsfix /dev/nvme1n1p5
+   18  pwd
+   19  cd /mnt/SHARED\ Medium/
+   20  pwd
+   21  ll
+   22  ls
+   23  mdkir 'LINUX CLI PRACITCE"
+   24  asdf
+   25  as
+   26  df
+   27  asd
+   28  f
+   29  asdfq
+   30  q
+   31  q
+   32  :wq
+   33  lsjadfl
+   34  asd
+   35  fa
+   36  sdf
+   37  asdf
+   38  a
+   39  sdf
+   40  a
+   41  sdf
+   42  asd
+   43  f
+   44  a
+   45  cd /mnt/SHARED\ Medium/
+   46  mkdir dir1 dir2
+   47  ls
+   48  mkdir "linxu asdf"
+   49  mkdir "LINYX CLI PRACTICE"
+   50  cd LINYX\ CLI\ PRACTICE/
+   51  ls
+   52  pwd
+   53  mkdir "Day 1"
+   54  cd Day\ 1/
+   55  echo "This is my first insert in the txt file" > first.txt
+   56  ls
+   57  ls > first.txt
+   58  cat first.txt
+   59  cat /proc/version
+   60  cat first
+   61  cat first.txt
+   62  echo "asdf asdf" > second.txt
+   63  cat second.txt
+   64  exho "This is my third attempt to insert line in a  txt file" > third.txt
+   65  echo "This is my third attempt to insert line in a  txt file" > third.txt
+   66  cat third.txt
+   67  echo "sadrfe"
+   68  ls
+   69  echo "this is a line in the first text file" > first.txt
+   70  cat first.tst
+   71  cat first.txt
+   72  echo "this is the second line in the first text file" > first.txt
+   73  cat first.txt
+   74  nano first.txt
+   75  cat first.txt
+   76  nano first.txt
+   77  cat first.txt
+   78  pwd
+   79  history
+   80  echo "this is the second line in the first text file" > first.txt
+   81  cat first.txt
+   82  history
+   83  touch
+   84  touch --help
+   85  apt install flameshot
+   86  clear
+   87  whoami
+   88  sudo chown -R jrathor /media/tishat1528/LINUX Doc_s/Screenshots
+   89  sudo chown -R tishat1528 /media/tishat1528/LINUX Doc_s/Screenshots
+   90  cd /media/tishat1528/LINUX Doc_s/Screenshots
+   91  sudo chown -R tishat1528 /media/"tishat1528"/LINUX Doc_s/Screenshots
+   92  sudo chown -R tishat1528 /media/tishat1528/"LINUX Doc_s"/Screenshots
+   93  cd ~
+   94  ~
+   95  sudo chown -R tishat1528 /media/"tishat1528"/LINUX Doc_s/
+   96  sudo chown -R tishat1528 /media/"tishat1528"/'LINUX Doc_s'/
+   97  sudo chown -R tishat1528 /media/tishat1528/"LINUX Do"/
+   98  sudo chown -R tishat1528 /media/tishat1528/'LINUX Doc_s'/
+   99  sudo chown -R tishat1528 /media/tishat1528/'LINUX Doc_s'
+  100  cd ..
+  101  ls -l
+  102  sudo chown -R tishat1528 .
+  103  ls -l
+  104  sudo chown -R tishat1528 .
+  105  ls -l
+  106  cd ..
+  107  sudo chown -R tishat1528 .
+  108  ls -l
+  109  cd ..
+  110  ls -l
+  111  sudo chown -R tishat1528 . 
+  112  ls -l
+  113  cd ..
+  114  sudo -R chown tishat1528 .
+  115  sudo chown -R tishat1528 .
+  116  ls -l
+  117  sudo chown -R tishat1528 .
+  118  ls -l
+  119  cd ..
+  120  ls -l
+  121  sudo chown -R tishat1528 .
+  122  ls -l
+  123  sudo chown -R tishat1528 .
+  124  ls -l
+  125  sudo chown -R tishat1528 .
+  126  ls
+  127  ls -r
+  128  ls -$\
+  129  ls -R
+  130  ls -l
+  131  sudo chown -R tishat1528 /mnt/LINUX Doc/Screenshots
+  132  sudo chown -R tishat1528 /mnt/"LINUX Doc"/Screenshots
+  133  ls -l
+  134  ls -l /mnt/LINUX Doc/Screenshots
+  135  ls -l /mnt/"LINUX Doc"/Screenshots
+  136  ls -l
+  137  cd ..
+  138  ls -l
+  139  sudo chown -R tishat1528 .
+  140  ls -l
+  141  cd
+  142  cd ~
+  143  sudo umount /mnt/"LINUX Doc"
+  144  gsettings set org.gnome.gnome-screenshot auto-save-directory "/mnt/LINUX\ Doc/Screenshots"
+  145  history
+  146  gsettings set org.gnome.gnome-screenshot auto-save-directory "/mnt/LINUX Doc/Screenshots"
+  147  sudo lsof +f -- /mnt/LINUX\ Doc
+  148  sudo kill -9 5315
+  149  sudo umount /mnt/LINUX\ Doc
+  150  sudo mount -t ntfs-3g -o uid=1000,gid=1000 /dev/nvme1n5 /mnt/LINUX\ Doc
+  151  sudo mount -t ntfs-3g -o uid=1000,gid=1000 /dev/nvme01n5 /mnt/LINUX\ Doc
+  152  sudo mount -t ntfs-3g -o uid=1000,gid=1000 /dev/nvme0n1p5 /mnt/LINUX\ Doc
+  153  sudo lsof +f -- /mnt/LINUX\ Doc
+  154  sudo mount -t ntfs-3g -o uid=1000,gid=1000 /dev/nvme0n1p5 /mnt/LINUX\ Doc
+  155  sudo apt get update
+  156  sudo apt insatll nodejs
+  157  apt install nodejs
+  158  node --version
+  159  sudo apt install npm
+  160  npm --version
+  161  npm install -global nodemon
+  162  sud npm install -global nodemon
+  163  sudo npm install -global nodemon
+  164  nodemon --version
+  165  node --versino
+  166  node --version
+  167  node "/mnt/LINUX Doc/CODING/VS CODE/WEB DEVELOPMENT/LINUX PRACTICE/test.js"
+  168  npm install nodemon --global
+  169  npm init -y
+  170  nodemon test.js
+  171  npm install express
+  172  nodemon test.js
+  173  ls -l
+  174  pwd
+  175  cd ..
+  176  mkdir LINUX\ PRACTICES
+  177  ls
+  178  cd LINUX\ PRACTICES
+  179  mkdir DAY\ 1
+  180  cd DAY\ 1/
+  181  npx create vite@latest
+  182  coe -R Day 1
+  183  code -r
+  184  code -r .
+  185  sudo tar -xzf postman.tar.gz -C /opt
+  186  sudo ln -s /opt/Postman/Postman /usr/bin/postman
+  187  rm postman.tar.gz
+  188  sudo nano /usr/share/applications/postman.desktop
+  189  udo apt install npm
+  190  sudo apt install npm
+  191  sudo apt install -y npm
+  192  sudo apt-get install python-software-properties 
+  193  curl -sL https://deb.nodesource.com/setup_220.x | sudo -E bash - 
+  194  curl -sL https://deb.nodesource.com/setup_220.x | sudo -E bash -
+  195  node -v
+  196  node --version
+  197  npm install -g npm@latest
+  198  sudo npm install -g npm@latest
+  199  npm --v
+  200  npm -v
+  201  sudo npm intall -g node@stable
+  202  sudo npm install -g node@stable
+  203  sudo npm install -g node@latest
+  204  node --version
+  205  nvm which current
+  206  sudo npm install nvm
+  207  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  208  curl -sL https://deb.nodesource.com/setup_220.x | sudo -E bash -
+  209  curl -sL https://deb.nodesource.com/setup_220.x | sudo -E bash - 
+  210  curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+  211  sudo apt-get install -y nodejs
+  212  node --version
+  213  sudo npm install -g npm@latest
+  214  npm -v
+  215  npx create vite@latest
+  216  npm create vite@latest
+  217  clear
+  218  npm run dev
+  219  install npm
+  220  npm install
+  221  npm run dev
+  222  ls
+  223  cd /Mnt
+  224  cd /mnt/
+  225  ls
+  226  cd /mnt/LINUX\ Doc/
+  227  ls -l
+  228  cd CODING/
+  229  ls
+  230  cd VS\ CODE/
+  231  ls
+  232  cd WEB\ DEVELOPMENT/LINUX\ PRACTICE
+  233  ls
+  234  cd ..
+  235  ls
+  236  cd LINUX\ PRACTICES
+  237  ls
+  238  mkdir DAY\ 2
+  239  ls
+  240  cd DAY\ 2
+  241  mkdir backend
+  242  code -r .
+  243  cd 
+  244  node --version
+  245  npm create vite@lates
+  246  npm create vite@latest
+  247  node --version
+  248  npm --version
+  249  cd frontend/
+  250  npm run dev
+  251  npm install
+  252  cd backend/
+  253  npm init -y
+  254  npm install express jsonwebtoken bcrypt body-parser
+  255  npm i express jsonwebtoken bcrypt body-parser dotenv mongoose joi cors
+  256  npm init -y
+  257  npm install express
+  258  npm install jsonwebtoken bcrypt
+  259  npm install body-parser dotenv mongoose joi cors
+  260  nodemon indes.js
+  261  cd frontend/
+  262  npm run dev
+  263  git --version
+  264  git status
+  265  apt list --installed
+  266  sudo apt purge firefox
+  267  sudo apt autoremove
+  268  sudo apt --update
+  269  sudo apt update
+  270  git add .
+  271  git status
+  272  git pull origin main
+  273  git status
+  274  git push -u origin main
+  275  git status
+  276  git push -u origin main
+  277  git commit -m "pusedh from pc"
+  278  git config --global user.email "towsif1528@gmail.com"
+  279  git config --globaleser.name "MD. ABU TOWSIF"
+  280  git config --globaluser.name "MD. ABU TOWSIF"
+  281  git config --global user.name "MD. ABU TOWSIF"
+  282  git user.nmae
+  283  git user.name
+  284  git user
+  285  help
+  286  history
+  287  git commit -m "pushed from pc"
+  288  git config credential.helper store
+  289  git push -u origin main
+  290  ipconfig
+  291  ip?
+  292  help
+  293  ifconfig
+  294  dir
+  295  ls
+  296  ls -l
+  297  ls -r
+  298  ls -l
+  299  dir
+  300  ls -l
+  301  sudo apt update
+  302  sudo apt install okular
+  303  rfkill list
+  304  sudo apt install qt5-style-kvantum qt5-style-kvantum-themes qt5-gtk2-platformtheme
+  305  nano ~/.profile
+  306  wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+  307  ￼
+  308  joplin --version
+  309  Joplin --version
+  310  ls
+  311  cls
+  312  clear
+  313  whoami
+  314  whami
+  315  whoami
+  316  towsir1528@gmail.com
+  317  tishatawsif@gmail.com
+  318  python --versin
+  319  python --veersion
+  320  python3 --veersion
+  321  python3.x --version
+  322  sudo su -
+  323  df
+  324  du -sh
+  325  uptime --since
+  326  who -b
+  327  python -u "/mnt/My Projects/PYTHON/hello.py"
+  328  python -u "/mnt/My Projects/PYTHON/list.py"
+  329  python -u "/mnt/My Projects/PYTHON/hello.py"
+  330  ls
+  331  sudo ./fileu
+  332  sudo -E ./fileu
+  333  cd ..
+  334  ls -l
+  335  sudo chown -R towsif1528 .
+  336  sudo chown -R tishat1528 .
+  337  ls -l
+  338  cd ..
+  339  ls -l
+  340  sudo chown -R tishat1528 .
+  341  sudo ./fileu
+  342  sudo fileu
+  343  sudo su -
+  344  sudo apt installk qbs
+  345  sudo apt install qbs
+  346  open qbs
+  347  open postman
+  348  [200~sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+  349  sudo apt-get update && sudo apt-get install qbittorrent~
+  350  sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+  351  sudo apt-get update && sudo apt-get install qbittorrent
+  352  clear
+  353  ls
+  354  cat package.json 
+  355  cat package-lock.json 
+  356  neofetch
+  357  apt search qbittorrent
+  358  apt show qbittorrent
+  359  apt list
+  360  apt search chrome
+  361  apt search youtube
+  362  git stauts
+  363  git status
+  364  git remote 
+  365  git remote
+  366  git config --global --add safe.directory '/mnt/My Projects/BOOKS'
+  367  git remote
+  368  git remote -v
+  369  CD ..
+  370  cd ..
+  371  ls BOOKS
+  372  cd BOOKS
+  373  git status
+  374  git add .
+  375  git commit -m "added the machine learing book"
+  376  git push -u origin main
+  377  history
+  378  git config credential.helper store
+  379  git push -u origin main
+  380  clear
+  381  git remote -v
+  382  clear
+  383  neofetch
+  384  uname -r
+  385  sudo apt update
+  386  sudo apt install --reinstall
+  387  sudo apt install --reinstall xserver-xorg-video-intel mesa-utils
+  388  sudo apt upgrade
+  389  startx
+  390  sudo dpkg-reconfigure lightdm
+  391  sudo systemctl set-default graphical.target
+  392  xserver
+  393  xstart
+  394  clear
+  395  startx
+  396  neofetch
+  397  sudo apt-get install ttf-mscorefonts-installer
+  398  git status
+  399  git log --oneline
+  400  git config --global --add safe.directory '/mnt/Academics/FALL 24-25'
+  401  git status
+  402  git add .
+  403  git commit -m "added web technologies document"
+  404  git push -u origin main
+  405  history
+  406  git log --oneline
+  407  ls
+  408  cd /mnt
+  409  ls
+  410  cd /mnt/Academics/
+  411  ls
+  412  ls
+  413  cd FALL\ 24-25/
+  414  git status
+  415  git add .
+  416  git status
+  417  git commit -m "added coa and os slides and lecture sheets"
+  418  git push -u origin main
+  419  history
+  420  apt list
+  421  apt search whatsapp
+  422  apt show whatsapp
+  423  apt show messenger
+  424  apt show chrome
+  425  apt search chrome
+  426  apt search whatsapp
+  427  apt search messenger
+  428  cls
+  429  clear
+  430  apt list --installed
+  431  git remote -v
+  432  git status
+  433  pwd
+  434  cd ..
+  435  ls
+  436  pwd
+  437  ;git pull 
+  438  git pull
+  439  git status
+  440  git add .
+  441  git commit -m "added data science course lecture slides and materials"
+  442  git push -u origin main
+  443  git status
+  444  git rm --cached
+  445  git rm --cached .
+  446  git rm -r --cached .
+  447  git add .
+  448  git status
+  449  git commit -m "gitignored some files"
+  450  git push -u origin main
+  451  git remote -v
+  452  git status
+  453  git add .
+  454  git commit -m "added deepdeep learing book"
+  455  git push -u origin mai
+  456  git push -u origin main
+  457  cd
+  458  flatpak install com.tomjwatson.Emote
+  459  emote --version
+  460  emote
+  461  flatpak install com.tomjwatson.Emote
+  462  Emote --version
+  463  sudo apt update
+  464  sudo apt install vlc
+  465  vlc --versin
+  466  vlc --version
+  467  ls
+  468  whoami
+  469  ispconfig
+  470  ipconfig
+  471  dir
+  472  man man
+  473  cd ..
+  474  git status
+  475  git add .
+  476  git commit -m "extended web technologies pdf documents"
+  477  git push -u origin main
+  478  ls
+  479  cd /mnt/Academics/FALL 24-25/WEB TECHNOLOGIES
+  480  cd /mnt/Academics/FALL\24-25/WEB\TECHNOLOGIES
+  481  cd /mnt/Academics/
+  482  cd FALL\ 24-25/
+  483  cd WEB\ TECHNOLOGIES/
+  484  ls
+  485  mkdir LAB
+  486  cd LAB/
+  487  code -r .
+  488  git status
+  489  git add .
+  490  git status
+  491  git commit -m "save docx"
+  492  git push
+  493  ls
+  494  cd ..
+  495  ls
+  496  neofetdch
+  497  neofetch
+  498  clear
+  499  ./install.sh
+  500  ls
+  501  cd /mnt/LINUX\ Doc/
+  502  pwd
+  503  ls
+  504  pwd
+  505  history
+  506  cd ..
+  507  git status
+  508  git add .
+  509  git commit -m "added web tech lecture slides"
+  510  git push -u origin main
+  511  git status
+  512  git add .
+  513  git commit -m "added web technolgies course plan"
+  514  git push -u origin main
+  515  git clone https://github.com/Tishat2247019/Thesis_Bsc.git
+  516  git remote -v
+  517  git inti
+  518  git init
+  519  git status
+  520  cd Thesis_Bsc/
+  521  git status
+  522  git remote -v
+  523  git config --global --add safe.directory /mnt/Academics/Thesis_Bsc
+  524  git remote -v
+  525  git status
+  526  ls
+  527  git satus
+  528  clear
+  529  git status
+  530  git add .
+  531  git status\
+  532  git status
+  533  git commmit -m "changed the pdf files name"
+  534  git commit -m "changed the pdf files name"
+  535  git push -u origin main
+  536  cd ..
+  537  git status
+  538  git add .
+  539  git commit -m "added my reveiw document"
+  540  git push -u origin main
+  541  clear
+  542  history
+  543  whoami
+  544  neofetch
+  545  exit
+  546  git add .
+  547  git commit -m "added the e selected review papers for analys"
+  548  git push -u origin main
+  549  git config credential.helper store
+  550  git push -u origin main'
+  551  git push -u origin main
+  552  exit
+  553  git status
+  554  git add .
+  555  gti commit -m "changed pdf"
+  556  git push -u origin main
+  557  git log ?
+  558  git log --oneline
+  559  git -am "changed pdf contents"
+  560  git -ma "changed pdf contents"
+  561  git commit  -am "changed pdf contents"
+  562  git status
+  563  git add .
+  564  git status
+  565  git commiti -m "changed pdf contents"
+  566  git commit -m "changed pdf contents"
+  567  git push -u origin main
+  568  git status
+  569  cd /mnt/Academics/
+  570  cd FALL\ 24-25/
+  571  git pull -u origin main
+  572  git pull origin main
+  573  git status
+  574  ls
+  575  cd COMPUTER\ ORGANIZATION\ AND\ ARCHITECTURE/
+  576  ls
+  577  cd MID/
+  578  ls
+  579  cd L
+  580  cd LAB/
+  581  ls
+  582  Ls
+  583  ls
+  584  cd Lab\ Task/
+  585  ls
+  586  man move
+  587  man mv
+  588  cd 
+  589  cd-
+  590  cd -
+  591  ls
+  592  mkdir Lab Task 1
+  593  ls
+  594  man rmdir
+  595  rmdir 1
+  596  rmdir Lab
+  597  rmdir Task/
+  598  ls
+  599  mkdir Lab\ Task\ 1
+  600  ls
+  601  pwd Lab\ Task\ 1
+  602  cd Lab\ Task\ 1/
+  603  touch Lab_Task.txt
+  604  nano Lab_Task.txt 
+  605  git status
+  606  ls
+  607  pwd
+  608  [200~/mnt/Academics/FALL 24-25/COMPUTER ORGANIZATION AND ARCHITECTURE/MID/LAB/Lab Task/Lab Task 1
+  609  mv /mnt/Academics/FALL 24-25/COMPUTER ORGANIZATION AND ARCHITECTURE/MID/LAB/Lab Task/* .
+  610  mv /mnt/Academics/FALL\ 24-25/COMPUTER\ ORGANIZATION\ AND\ ARCHITECTURE/MID/LAB/Lab\ Task/* .
+  611  gita dd .
+  612  git add .
+  613  git commit -m "added coa lab task question"
+  614  git push -u origin main
+  615  cd../..
+  616  cd .. / ..
+  617  cd ../..
+  618  cd ..
+  619  git status
+  620  git add .
+  621  git status
+  622  git commit -m "added ML lecture slide and changed coa lab folder structure"
+  623  git push -u origin main
+  624  git status
+  625  sdf
+  626  dir
+  627  pwd
+  628  ls
+  629  ls -l
+  630  ls -la
+  631  ls -al
+  632  cd /mnt/
+  633  cd Academics/
+  634  cd FALL\ 24-25/
+  635  git status
+  636  git pull -u origin main
+  637  git pull origin main
+  638  git status
+  639  git add .
+  640  git commit -m "added collected COA lecture slide and notes"
+  641  git push -u origin main
+  642  speedtest
+  643  tldr ls
+  644  cd ~
+  645  pwd
+  646  sudo apt install tldr
+  647  tldr --version
+  648  git --version
+  649  cd -
+  650  tldr rmdir
+  651  tldr rm
+  652  cd -
+  653  git status
+  654  git add .
+  655  git commit -m "updated folder structur of os folder"
+  656  git push -u origin main
+  657  git ad d.
+  658  git add .
+  659  git commimt -m "some update"
+  660  git commit -m "some update"
+  661  git push -u origin main
+  662  git log --oneline
+  663  git rev-list --count HEAD
+  664  git shortlog -sn --all
+  665  teams
+  666  chrome
+  667  open chrome
+  668  postman
+  669  google chrome
+  670  Chrome
+  671  lmdr ls
+  672  history
+  673  tldr sudo
+  674  git shortlog -sn --all
+  675  git rev-list --count HEAD
+  676  git rev-list -sn --all
+  677  git rev-list --count head
+  678  git rev-list --count HEAD
+  679  cd -
+  680  popd
+  681  pushd
+  682  cd /mnt/Academics/FALL\ 24-25/
+  683  git status
+  684  git ad.d
+  685  git add .
+  686  git commit -m "some update"
+  687  git push -u origin main
+  688  git status
+  689  git rev-list --count head
+  690  git rev-list --count HEAD
+  691  git rev-list --co\unt HEAD
+  692  neofetch
+  693  sudo apt install fzf
+  694  fzf -1 pdf
+  695  fzf -q pdf
+  696  fzf -q ML
+  697  fzf -q ML -e
+  698  cd -
+  699  cd /mnt/Academics/FALL\ 24-25/
+  700  git status
+  701  git add .
+  702  git commi -m "updated os lecture slide"
+  703  git commit -m "updated os lecture slide"
+  704  git push -u origin main
+  705  git rev --countt HEAD
+  706  git ref --countt HEAD
+  707  git ref-list --countt HEAD
+  708  git rev-list --countt HEAD
+  709  git rev-list --count HEAD
+  710  git log --oneline
+  711  git status
+  712  git push -u origin main
+  713  git status
+  714  git add .
+  715  git commit -m "added coa lecture slide"
+  716  git push -u origin main
+  717  git log --oneline
+  718  git rev-list --count HEAD
+  719  git -am "added excel shit link"
+  720  git -ma "added excel shit link"
+  721  git commit -am "added excel shit link"
+  722  git status
+  723  git add .
+  724  git commit -m "excel sheet added"
+  725  git log --online
+  726  git log --oneline
+  727  git push -u origin main
+  728  #include <bits/stdc++.h>
+  729  using namespace std;
+  730  int main(){}
+  731  reutnr int a, int b,
+  732  int a, b;
+  733  cin >> n;
+  734  asdfkj
+  735  find / -name "*.git" -type d
+  736  nd -name HEAD -execdir test -e refs -a -e objects \; -printf %h\\n
+  737  find -name HEAD -execdir test -e refs -a -e objects \; -printf %h\\n
+  738  find / -name .git -exec dirname {} \; -prune
+  739  locate -r "\.git$"
+  740  Get-ChildItem . -Recurse -Hidden .git
+  741  ls
+  742  history
+  743  chmod +x check_git_changes.sh
+  744  [200~chmod +x check_git_changes.sh
+  745  ~chmod +x check_git_changes.sh
+  746  chmod +x check_git_changes.sh
+  747  */5 * * * * /path/to/check_git_changes.sh
+  748  crontab -e
+  749  crontab -l
+  750  git status
+  751  notify-send "Test Notification" "This is a test"
+  752  grep CRON /var/log/syslog
+  753  notify-send "Test Notification" "This is a test"
+  754  [200~chmod +x check_git_changes.sh
+  755  chmod +x check_git_changes.sh
+  756  ./check_git_changes.sh
+  757  check_git_changes.sh
+  758  ./check_git_changes.sh
+  759  #!/bin/bash
+  760  # Path to your Git repository
+  761  REPO_PATH="/mnt/Academics/FALL 24-25"
+  762  # Previous status file to track changes
+  763  PREVIOUS_STATUS_FILE="/tmp/git_status_previous.txt"
+  764  # Change to the Git repository directory
+  765  cd "$REPO_PATH" || exit
+  766  # Get the current status of the repository
+  767  CURRENT_STATUS=$(git status --porcelain)
+  768  # Check if the previous status file exists
+  769  if [[ -f "$PREVIOUS_STATUS_FILE" ]]; then
+  770    PREVIOUS_STATUS=$(<"$PREVIOUS_STATUS_FILE"); 
+  771    if [[ "$CURRENT_STATUS" != "$PREVIOUS_STATUS" ]]; then
+  772      notify-send "Git Repo Alert" "Changes detected in the repository at $REPO_PATH"; 
+  773      echo "$CURRENT_STATUS" > "$PREVIOUS_STATUS_FILE";   fi; else
+  774    echo "$CURRENT_STATUS" > "$PREVIOUS_STATUS_FILE"; fi
+  775  #!/bin/bash
+  776  # Path to your Git repository
+  777  REPO_PATH="/mnt/Academics/FALL 24-25"
+  778  # Previous status file to track changes
+  779  PREVIOUS_STATUS_FILE="/tmp/git_status_previous.txt"
+  780  # Change to the Git repository directory
+  781  cd "$REPO_PATH" || exit
+  782  # Get the current status of the repository
+  783  CURRENT_STATUS=$(git status --porcelain)
+  784  # Check if the previous status file exists
+  785  if [[ -f "$PREVIOUS_STATUS_FILE" ]]; then
+  786    PREVIOUS_STATUS=$(<"$PREVIOUS_STATUS_FILE"); 
+  787    if [[ "$CURRENT_STATUS" != "$PREVIOUS_STATUS" ]]; then
+  788      notify-send "Git Repo Alert" "Changes detected in the repository at $REPO_PATH"; 
+  789      echo "$CURRENT_STATUS" > "$PREVIOUS_STATUS_FILE";   fi; else
+  790    echo "$CURRENT_STATUS" > "$PREVIOUS_STATUS_FILE"; fi
+  791  git status --porcelain
+  792  ./check_git_changes.sh 
+  793  notify-send "Test Notification" "This is a test"
+  794  touch notify_every_30_seconds.sh
+  795  nano notify_every_30_seconds.sh 
+  796  chmod +x notify_every_30_seconds.sh
+  797  ./notify_every_30_seconds.sh
+  798  chmod +x check_git_changes.sh 
+  799  ./check_git_changes.sh 
+  800  ./check_git_changes.sh
+  801  crontab -e
+  802  chmod +x check_git_changes.sh 
+  803  ./check_git_changes.sh
+  804  chmod +x check_git_changes.sh 
+  805  ./check_git_changes.sh
+  806  chmod +x check_git_changes.sh 
+  807  ./check_git_changes.sh
+  808  git status
+  809  echo alsdf > sadfasdf.txt
+  810  cd /mnt/Academics/FALL\ 24-25/
+  811  if [[ `git status --porcelain` ]]; then
+  812  else
+  813  fi
+  814  if [[ `git status --porcelain` ]]; then
+  815  else
+  816  fi
+  817  if [[ $(git status --porcelain) ]]; then
+  818  else
+  819  fi
+  820  if [[ $(git status --porcelain) ]]; then   echo "There are changes in the repository."; else   echo "No changes in the repository."; fi
+  821  git status
+  822  history
+  823  ./check_git_changes.sh
+  824  git add .
+  825  git commit -m "checking somthing"
+  826  git push -u origin main
+  827  #!/bin/bash
+  828  # Set your Git repository path here
+  829  REPO_PATH="/path/to/your/git/repo"
+  830  cd "$REPO_PATH" || { echo "Failed to navigate to repository"; exit 1; }
+  831  #!/bin/bash
+  832  # Set your Git repository path here
+  833  REPO_PATH="/path/to/your/git/repo"
+  834  cd "$REPO_PATH" || { echo "Failed to navigate to repository"; exit 1; }
+  835  git status
+  836  ./check_git_changes.sh
+  837  git status
+  838  git add .,
+  839  git add .
+  840  git commit "deleted somethings"
+  841  git commit -m  "deleted somethings"
+  842  git push -u origin main
+  843  git status
+  844  git add .
+  845  git commit -m "added ML pdf slide"
+  846  git push -u origin main
+  847  git rev-list HEAD --count
+  848  code -r /mnt/Academics/FALL 24-25/WEB TECHNOLOGIES/LAB/HTML
+  849  code -r /mnt/Academics/FALL 24-25/WEB TECHNOLOGIES/LAB/HTML/
+  850  code -r .
+  851  git status
+  852  git add .
+  853  git commit -m "practiced html"
+  854  git push -u origin main
+  855  neofetch
+  856  whoami
+  857  neofetch
+  858  git pull origin main
+  859  git status
+  860  git add .
+  861  git status
+  862  git commit -m "delete some files"
+  863  git push -u origin main
+  864  history
+  865  git rev-list HEAD --count
+  866  cd -
+  867  git status
+  868  git add .
+  869  git commit -m "added web technologies pdf lecture slide"
+  870  git push -u origin main
+  871  git rev-list HEAD --count
+  872  git status
+  873  git pull origin main
+  874  git status
+  875  git add .
+  876  git commit -m "added something"
+  877  git push -u origin main
+  878  git shortlog
+  879  git user.name
+  880  git --help
+  881  cd /mnt/
+  882  ls
+  883  cd Academics/
+  884  cd FALL\ 24-25/
+  885  git status
+  886  git pull
+  887  git status
+  888  git add .
+  889  git commit -m "updated some files of web tech lab files"
+  890  git push -u origin main
+  891  git add .
+  892  git status
+  893  git commit -m "added data science lecture slides"
+  894  git push -u origin main
+  895  git add .
+  896  git commit -m "added data science 17 november lab files"
+  897  git push
+  898  git status
+  899  git add .
+  900  git commit -m "added machine learning lecture slides"
+  901  git push -u origin main
+  902  cd ..
+  903  git add .
+  904  git status
+  905  git commit -m "added some lecture slides of coa"
+  906  git push -u origin main
+  907  uname
+  908  whoami
+  909  uname
+  910  pwd
+  911  uname
+  912  uname -r
+  913  uname -m
+  914  mkdir new_direactory
+  915  cd new_direactory/
+  916  ls
+  917  ls -a
+  918  touch .hidden
+  919  ls
+  920  ls -a
+  921  rm .hidden
+  922  ls
+  923  ls -a
+  924  touch new_file.txt
+  925  echo "this is the first line " >> new_file.txt 
+  926  cat new_file.txt 
+  927  cat >> new_file.txt 
+  928  cat new_file.txt 
+  929  cat > new_file.txt 
+  930  cat new_file.txt 
+  931  echo "this is the new second line"
+  932  cat new_file.txt 
+  933  echo "this is the new second line" >> new_file.txt 
+  934  cat new_file.txt
+  935  touch new2.txt new3.txt new4.txt
+  936  ls
+  937  touch pp.pdf
+  938  ls
+  939  ls *txt
+  940  ls .txt
+  941  ls *.txt
+  942  mkdir --help
+  943  mkdir -p newfolder1/subfolder2/subfolder3/
+  944  ls
+  945  ls newfolder1/
+  946  ls newfolder1/subfolder2/
+  947  ls newfolder1/subfolder2/subfolder3/
+  948  ls -a  newfolder1/subfolder2/subfolder3/
+  949  cd newfolder1/
+  950  ls -a
+  951  uname -r
+  952  uname --help
+  953  uname -rv
+  954  uname -v
+  955  uname -m
+  956  echo "I am redirectiing this command into a new file" >> redirect.txt
+  957  cat redirect.txt 
+  958  uname
+  959  uname >> system.log
+  960  ls
+  961  cat system.log 
+  962  uname -a
+  963  unamr -a -n
+  964  history >> history.txt && cat history.txt
