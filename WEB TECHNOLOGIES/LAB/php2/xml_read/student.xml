@@ -1,0 +1,38 @@
+<students>
+        <student>
+                    <name>tishat</name>
+                    <id>22-47019-1</id>
+                    <department>Cse</department>
+                    <address>
+                        <add1>
+                            <road>1</road>
+                            <city>dhaka</city>
+                        </add1>
+                        
+                        <add2>
+                        <road>1</road>
+                            <city>dhadka</city>
+                         </add2>
+                        
+                    </address>
+        </student>
+
+        <student>
+            
+            <name>opi</name>
+            <id>22-47018-1</id>
+            <department>Cse</department>
+            <address>
+                <add1>
+                    
+                <road>2</road>
+                <city>Bogura</city>
+                </add1>
+                <add2>
+                    <road>1</road>
+                    <city>dhaka</city>
+                 </add2>
+            </address>
+        </student>
+
+</students>
