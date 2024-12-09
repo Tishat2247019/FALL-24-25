@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Registratim page</title>
+</head>
+
+<body>
+
+    <table align="center" width="500px" height="900px">
+        <tr height="100px" align="center">
+            <td>
+                <h1>Welcome to Registration Page</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="reg_check.php" method="post">
+                    <fieldset>
+                        <legend>Sign Up</legend>
+                        <table>
+                            <tr>
+                                <td width="50%">Username</td>
+                                <td><input type="text" name="username" value=""></td>
+                            </tr>
+                            <tr>
+                                <td width="50%">Email</td>
+                                <td><input type="email" name="email" value=""></td>
+                            </tr>
+                            <tr>
+                                <td width="50%">ID</td>
+                                <td><input type="text" name="id" value=""></td>
+                            </tr>
+                            <tr>
+                                <td width="50%">Date of Birth</td>
+                                <td><input type="date" name="dob" value=""></td>
+                            </tr>
+                            <tr>
+                                <td width="50%">Gender</td>
+                                <td>
+                                    <input type="radio" name="gender" value="male"> male
+                                    <input type="radio" name="gender" value="female "> female
+                                    <input type="radio" name="gender" value="other "> other
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">Password</td>
+                                <td><input type="password" name="password" value=""></td>
+                            </tr>
+                            <tr>
+                                <td width="50%">Confirm Password</td>
+                                <td><input type="password" name="confirm_password" value=""></td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="2" align="end"><input type="submit" name="submit" value="Submit"><input
+                                        type="reset" name="reset" value="Reset"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
