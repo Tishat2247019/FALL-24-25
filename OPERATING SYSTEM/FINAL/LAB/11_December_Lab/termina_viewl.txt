@@ -1,0 +1,105 @@
+~$ vi ab.sh
+~$ ./ab.sh
+bash: ./ab.sh: Permission denied
+~$ ls
+Dec_11_LAB.term  ab.sh
+~$ ls -la
+total 17
+drwxr-xr-x 4 user user   14 Dec 12 07:08 .
+drwxr-xr-x 1 root root 4096 Dec 12 06:07 ..
+-rw-r--r-- 1 user user 9284 Dec 12 07:09 .Dec_11_LAB.term-0.term
+-rw------- 1 user user   20 Dec 12 07:09 .bash_history
+lrwxrwxrwx 1 user user   18 Dec 12 06:07 .bash_profile -> /home/user/.bashrc
+-rw-r--r-- 1 user user 2355 Dec 12 06:07 .bashrc
+-rw-r--r-- 1 user user    0 Dec 12 07:08 .compute-server.syncdb
+-rw-r--r-- 1 user user 8192 Dec 12 06:07 .jupyter-blobs-v0.db
+lrwxrwxrwx 1 user user   12 Dec 12 06:07 .smc -> /tmp/.cocalc
+dr-xr-xr-x 3 user user    2 Dec 12 06:59 .snapshots
+drwxr-xr-x 2 user user    3 Dec 12 06:07 .ssh
+-rw------- 1 user user  760 Dec 12 07:08 .viminfo
+-rw-r--r-- 1 user user    0 Dec 12 07:07 Dec_11_LAB.term
+-rw-r--r-- 1 user user   37 Dec 12 07:08 ab.sh
+~$ chmod 777 ab.sh
+~$ ls -la
+total 17
+drwxr-xr-x 4 user user    14 Dec 12 07:08 .
+drwxr-xr-x 1 root root  4096 Dec 12 06:07 ..
+-rw-r--r-- 1 user user 10248 Dec 12 07:09 .Dec_11_LAB.term-0.term
+-rw------- 1 user user    43 Dec 12 07:09 .bash_history
+lrwxrwxrwx 1 user user    18 Dec 12 06:07 .bash_profile -> /home/user/.bashrc
+-rw-r--r-- 1 user user  2355 Dec 12 06:07 .bashrc
+-rw-r--r-- 1 user user     0 Dec 12 07:08 .compute-server.syncdb
+-rw-r--r-- 1 user user  8192 Dec 12 06:07 .jupyter-blobs-v0.db
+lrwxrwxrwx 1 user user    12 Dec 12 06:07 .smc -> /tmp/.cocalc
+dr-xr-xr-x 3 user user     2 Dec 12 06:59 .snapshots
+drwxr-xr-x 2 user user     3 Dec 12 06:07 .ssh
+-rw------- 1 user user   760 Dec 12 07:08 .viminfo
+-rw-r--r-- 1 user user     0 Dec 12 07:07 Dec_11_LAB.term
+-rwxrwxrwx 1 user user    37 Dec 12 07:08 ab.sh
+~$ ./ab.sh
+Good Morning
+Thu Dec 12 07:10:06 UTC 2024
+~$ vi ab.sh
+~$ ./ab.sh
+Good Morning
+Thu Dec 12 07:12:02 UTC 2024
+SHOHAN
+Hello SHOHAN
+~$ vi ab.sh
+~$ ./ab.sh
+Good Morning
+Thu Dec 12 07:14:02 UTC 2024
+Shohan
+Hello Shohan
+12
+8
+./ab.sh: line 9: unexpected EOF while looking for matching `"'
+./ab.sh: line 10: syntax error: unexpected end of file
+~$ vi ab.sh
+~$ ./ab.sh
+Good Morning
+Thu Dec 12 07:14:48 UTC 2024
+shohan
+Hello shohan
+12
+8
+Addition of 12 & 8 is : 20
+~$ vi new.sh
+~$ ls -la
+total 22
+drwxr-xr-x 4 user user    15 Dec 12 07:15 .
+drwxr-xr-x 1 root root  4096 Dec 12 06:07 ..
+-rw-r--r-- 1 user user 41729 Dec 12 07:15 .Dec_11_LAB.term-0.term
+-rw------- 1 user user   119 Dec 12 07:15 .bash_history
+lrwxrwxrwx 1 user user    18 Dec 12 06:07 .bash_profile -> /home/user/.bashrc
+-rw-r--r-- 1 user user  2355 Dec 12 06:07 .bashrc
+-rw-r--r-- 1 user user     0 Dec 12 07:08 .compute-server.syncdb
+-rw-r--r-- 1 user user  8192 Dec 12 06:07 .jupyter-blobs-v0.db
+lrwxrwxrwx 1 user user    12 Dec 12 06:07 .smc -> /tmp/.cocalc
+dr-xr-xr-x 4 user user     2 Dec 12 07:11 .snapshots
+drwxr-xr-x 2 user user     3 Dec 12 06:07 .ssh
+-rw------- 1 user user  2603 Dec 12 07:15 .viminfo
+-rw-r--r-- 1 user user     0 Dec 12 07:07 Dec_11_LAB.term
+-rwxrwxrwx 1 user user   146 Dec 12 07:14 ab.sh
+-rw-r--r-- 1 user user    25 Dec 12 07:15 new.sh
+~$ chmod 777 new.sh
+~$ la -la
+total 22
+drwxr-xr-x 4 user user    15 Dec 12 07:15 .
+drwxr-xr-x 1 root root  4096 Dec 12 06:07 ..
+-rw-r--r-- 1 user user 43107 Dec 12 07:16 .Dec_11_LAB.term-0.term
+-rw------- 1 user user   143 Dec 12 07:16 .bash_history
+lrwxrwxrwx 1 user user    18 Dec 12 06:07 .bash_profile -> /home/user/.bashrc
+-rw-r--r-- 1 user user  2355 Dec 12 06:07 .bashrc
+-rw-r--r-- 1 user user     0 Dec 12 07:08 .compute-server.syncdb
+-rw-r--r-- 1 user user  8192 Dec 12 06:07 .jupyter-blobs-v0.db
+lrwxrwxrwx 1 user user    12 Dec 12 06:07 .smc -> /tmp/.cocalc
+dr-xr-xr-x 4 user user     2 Dec 12 07:11 .snapshots
+drwxr-xr-x 2 user user     3 Dec 12 06:07 .ssh
+-rw------- 1 user user  2603 Dec 12 07:15 .viminfo
+-rw-r--r-- 1 user user     0 Dec 12 07:07 Dec_11_LAB.term
+-rwxrwxrwx 1 user user   146 Dec 12 07:14 ab.sh
+-rwxrwxrwx 1 user user    25 Dec 12 07:15 new.sh
+~$ ./new.sh
+Demo Sh
+~$ 
