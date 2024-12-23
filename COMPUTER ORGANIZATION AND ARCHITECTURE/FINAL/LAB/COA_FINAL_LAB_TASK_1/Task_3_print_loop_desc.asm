@@ -1,13 +1,8 @@
 .model small
 .stack 100h
 
-.data
-
 .code
 main proc
-    mov ax, @data       
-    mov ds, ax
-
     mov cx, 19
     mov dx, 100
     mov ax, 0         
