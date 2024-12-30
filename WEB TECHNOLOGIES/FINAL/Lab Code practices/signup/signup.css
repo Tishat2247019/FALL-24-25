@@ -120,23 +120,24 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  border: 2px solid black;
+  gap: 30px;
+  border-radius: 25px;
+  /* border: 2px solid black; */
 }
 
 .form_container .inputbox {
   width: 60%;
   /* border: 1px solid black; */
-  height: 50px;
+  height: 60px;
   position: relative;
   /* padding: 10px; */
   font-family: "CustomFont", sans-serif;
 }
 
 .form_container .inputbox input {
-  height: 90%;
+  height: 100%;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 15px;
   position: relative;
   font-size: 15px;
   font-family: "CustomFont", sans-serif;
@@ -149,6 +150,8 @@ form {
   left: 0;
   top: 16px;
   transition: 0.3s;
+  letter-spacing: 2px;
+
   /* border: 1px solid black; */
 }
 
@@ -163,6 +166,12 @@ form {
   /* border-radius: 5px;  */
   cursor: pointer; /* Show pointer on hover */
   font-size: 16px; /* Match font size */
+  transition: 200ms;
+}
+
+.form_container .inputbox input[type="password"] {
+  font: caption;
+  font-size: 26px; /* Match font size */
 }
 
 .form_container .inputbox input[type="submit"]:hover {
@@ -171,19 +180,18 @@ form {
 
 .inputbox input:focus ~ label,
 .inputbox input:valid ~ label {
-  transform: translateX(0px) translateY(-10px);
-  /* background-color: white; */
+  transform: translateX(7px) translateY(-10px);
   font-size: 0.6rem;
   letter-spacing: 2px;
   font-family: "CustomFont", sans-serif;
 }
 .inputbox input:focus {
-  /* border: 2px solid black;
-  border-radius: 0px; */
-  border: none;
+  border: 2px solid black;
+  border-radius: 0px;
+  /* border: none; */
 }
 
 .inputbox input:valid {
-  /* border: 2px solid black; */
-  border: none;
+  border: 2px solid black;
+  border-radius: 0px;
 }
