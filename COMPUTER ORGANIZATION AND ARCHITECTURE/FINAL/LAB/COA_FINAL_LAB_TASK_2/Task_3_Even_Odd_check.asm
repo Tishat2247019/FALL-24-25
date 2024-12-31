@@ -2,97 +2,71 @@
 .stack 100
 .data
     msg_input db 'Please enter a number to check even/odd: $'
-    msg_the_number db 'The number $'
     msg_odd db ' is an odd number.$'
     msg_even db ' is an even number.$'
     msg_error db ' is not a number.$'
-    newline db 13, 10, '$'   ; Carriage return + Line feed for a new line
 
-    input db ?               ; To store the user input
+    input db ?
 
 .code
 main proc
     mov ax, @data
     mov ds, ax 
 
-    ; Display the input prompt
     mov ah, 9
     lea dx, msg_input
     int 21h
 
-    ; Input a character
     mov ah, 1
     int 21h
-    mov input, al            ; Store the input character in 'input'
+    mov input, al
 
-    ; Add a newline after input
-    lea dx, newline
-    mov ah, 9
+    mov ah, 2
+    mov dl, 10
     int 21h
 
-    ; Check if input is a digit (ASCII '0' to '9')
-    mov al, input            ; Reload input from memory
-    cmp al, '0'
-    jl not_number            ; If less than '0', not a number
-    cmp al, '9'
-    jg not_number            ; If greater than '9', not a number
+    mov dl, 13
+    int 21h
 
-    ; Convert ASCII digit to numerical value
+    mov al, input
+    cmp al, '0'
+    jl not_number
+    cmp al, '9'
+    jg not_number
+
     sub al, '0'
 
-    ; Use TEST instruction to check if even or odd
-    mov bl, al               ; Copy the number into BL for later
-    test al, 1               ; Check the least significant bit (LSB)
-    jz even_number           ; If LSB = 0, it’s even
+    mov bl, al
+    test al, 1
+    jz even_number
 
 odd_number:
-    ; Display "The number"
-    lea dx, msg_the_number
-    mov ah, 9
-    int 21h
-
-    ; Display the number
-    add bl, '0'              ; Convert back to ASCII
+    add bl, '0'
     mov dl, bl
     mov ah, 2
     int 21h
 
-    ; Display " is an odd number."
     lea dx, msg_odd
     mov ah, 9
     int 21h
     jmp exit
 
 even_number:
-    ; Display "The number"
-    lea dx, msg_the_number
-    mov ah, 9
-    int 21h
-
-    ; Display the number
-    add bl, '0'              ; Convert back to ASCII
+    add bl, '0'
     mov dl, bl
     mov ah, 2
     int 21h
 
-    ; Display " is an even number."
     lea dx, msg_even
     mov ah, 9
     int 21h
     jmp exit
 
 not_number:
-    ; Display "The number"
-    lea dx, msg_the_number
-    mov ah, 9
-    int 21h
-
-    ; Display the invalid input
-    mov dl, input            ; Input character is already in 'input'
+    mov dl, input
     mov ah, 2
     int 21h
 
-    ; Display " is not a number."
     lea dx, msg_error
     mov ah, 9
     int 21h
