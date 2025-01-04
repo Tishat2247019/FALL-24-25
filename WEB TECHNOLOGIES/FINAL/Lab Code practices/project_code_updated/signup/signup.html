@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="header">
+                <div class="logo_container">
+                    <img src="../SVG/adventure.svg" alt="adventure logo">
+                </div>
+            </div>
+            <div class="left">
+                <h1>Registration</h1>
+            </div>
+            <div class="right">
+                <form action="reg_check.php" method="post">
+                    <div class="form_container">
+                        <div class="inputbox">
+                            <input type="number" name="id" id="id" required>
+                            <label for="id">ID</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <label for="con_password">Confirm Password</label>
+                        </div>
+                        <div class="inputradiobox">
+                            <input type="radio" name="type" value="User"> User
+                            <input type="radio" name="type" value="Advertiser"> Advertiser
+                            <input type="radio" name="type" value="Admin"> Admin
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="submit" name="signup" value="Submit">
+                        </div>
+                        <a href="../signin/signin.html">Sign in?</a>
+                </form>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    </div>
+</body>
+</html>
