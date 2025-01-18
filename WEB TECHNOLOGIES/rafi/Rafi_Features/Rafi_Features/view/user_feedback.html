@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="../asset/user_feedback.css"></link>
+    </head>
+
+    <body>
+        <form action="../controller/submit_feedback.php" method="POST">
+            <table align="center">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend><h3>Feedback</h3></legend>
+                            <table>
+                                <tr>
+                                    <td align="center"><h4>How Can We Improve?</h4></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">Your feedback help us make better for everyone.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea name="feedback" rows="5" cols="50" placeholder="Write your feedback here..."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <input type="submit" value="Submit Feedback">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

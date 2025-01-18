@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8f5;
+  color: #333;
+}
+
+/* Main container */
+.main_container {
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* No border radius for full-width layout */
+  overflow: hidden;
+}
+
+/* Header styles */
+.header {
+  background-color: #4caf50;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_container img {
+  max-height: 50px;
+}
+
+.header h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Welcome menu */
+.welcome_menu {
+  background-color: #d9f2e6;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  color: #2f6a4f;
+  font-weight: bold;
+  border-bottom: 3px solid #4caf50;
+}
+
+.welcome_advertiser {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.welcome_advertiser h2 {
+  font-size: 1.8em;
+  color: #4caf50;
+}
+
+.welcome_advertiser .advertisername {
+  color: #00796b;
+  font-weight: bold;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section styles */
+.section {
+  background-color: #f2f9f5;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #d4e9dc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Keep content aligned and centered */
+  width: 90%;
+}
+
+.section h2 {
+  color: #4caf50;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.section ul li a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.generate-report {
+  background-color: #1ca427;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.generate-report:hover {
+  background-color: #168b1f;
+}
+
+.backbutton {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.backbutton a {
+  display: inline-block; /* Makes the link behave like a button */
+  text-decoration: none;
+  color: #f8f4f4;
+  background-color: #1ca427;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.backbutton a:hover {
+  background-color: #168b1f;
+}
+
+/* Footer styles */
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  height: 15vh;
+  background-color: black;
+  color: orange;
+}
+
+.footer p {
+  font-size: 2.9em;
+}
+
+/* Footer */
+
+footer {
+  background-color: #a5d6a7;
+  padding: 20px;
+  border-top: 1px solid #81c784;
+  margin-top: auto; /* Ensure footer sticks to bottom when content is short */
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+  min-width: 150px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.footer-section ul li a:hover {
+  color: #6c757d;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #6c757d;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}

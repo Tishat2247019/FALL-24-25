@@ -1,0 +1,41 @@
+<?php
+session_start();
+require_once('../../model/usermodel.php');
+if(isset($_POST['login'])){
+    $username = trim($_POST["username"]);
+    $password = trim($_POST["password"]);
+    if(empty($username) || empty($password)){
+        echo "<h3>Username or Password is emtpy</h3>";
+    }
+    else{
+        $login_status = login($username, $password);
+        if($login_status == false){
+            echo "<h3>Invalid Username and Password</h3>";  
+        }
+        else{
+            $_SESSION['status'] = true;
+            if($login_status['type'] == 'User'){
+                // $json_array = ['type'=>'User', 'id'=> $login_status['user_id'] ];
+                // echo json_encode($json_array);
+            header("location:../../view/opi_features/menu/user_menu.php?id={$login_status['user_id']}");
+            }
+            else if($login_status['type'] == 'Advertiser'){
+            header("location:../../view/opi_features/menu/advertiser_menu.php?id={$login_status['user_id']}");
+            // $json_array = ['type'=>'Advertiser', 'id'=> $login_status['user_id'] ];
+            //     echo json_encode($json_array);
+            }
+            else{
+            header("location:../../view/opi_features/menu/admin_menu.php?id={$login_status['user_id']}");
+            // $json_array = ['type'=>'Admin', 'id'=> $login_status['user_id'] ];
+            //     echo json_encode($json_array);
+            
+            }
+        }
+    }
+
+}
+else{
+    header("location:../../view/opi_features/auth_feature/signup.html");
+}
+
+?>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/css/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="header">
+                <div class="logo_container">
+                    <img src="../../asset/images/SVG/adventure.svg" alt="adventure logo">
+                </div>
+            </div>
+            <div class="left">
+                <div class="left">
+                    <h1>Your journey begins here Register now
+                    </h1>
+                    <h2>
+                        unlock endless possibilities with AD Venture
+                    </h2>
+                </div>
+            </div>
+            <div class="right">
+                <form action="../../controller/reg_check.php" method="post">
+                    <div class="form_container">
+                        <h1>SIGN UP</h1>
+                        <div class="inputbox">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <label for="con_password">Confirm Password</label>
+                        </div>
+                        <div class="inputradiobox">
+                            <input type="radio" name="type" value="User"> User
+                            <input type="radio" name="type" value="Advertiser"> Advertiser
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="submit" name="signup" value="SUBMIT">
+                        </div>
+                        <div class="inputbox" id="alreadey_account">
+                            <p>Already have an account?</p>
+                            <a href="signin.html">Sign in</a>
+
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    </div>
+</body>
+</html>

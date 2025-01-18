@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Ad Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container h1 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="submit"],
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="text"] {
+            background-color: #f9f9f9;
+            color: #555;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /*.form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }*/
+
+        .form-container button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /*.form-container button:hover {
+            background-color: #e68a00;
+        }*/
+
+        .form-container .field {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Ad Analytics</h1>
+        <form action="" method="">
+            <div class="field">
+                <label for="view-performance">View Ad Performance</label>
+                <span id="view-performance">Chart</span>
+            </div>
+            <div class="field">
+                <label for="ad-title">Search by Ad Title</label>
+                <input type="text" name="ad-title" id="ad-title" placeholder="Search">
+            </div>
+            <div class="field">
+                <input type="submit" value="View Performance">
+            </div>
+            <div class="field">
+                <button type="button" onclick="window.location.href='../view/dashboard/advertiser_menu.php'">Go Back</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

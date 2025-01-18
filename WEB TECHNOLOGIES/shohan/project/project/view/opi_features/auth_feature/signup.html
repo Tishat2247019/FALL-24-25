@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../asset/css/opi_css_files/signup.css">
+    <link rel="icon" type="image/x-icon" href="../../../asset/images/logo/ad.svg">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="header">
+                <div class="logo_container">
+                    <img src="../../../asset/SVG/adventure.svg" alt="adventure logo">
+                </div>
+            </div>
+            <div class="left">
+                <div class="left">
+                    <h1>Your journey begins here Register now
+                    </h1>
+                    <h2>
+                        unlock endless possibilities with AD Venture
+                    </h2>
+                </div>
+            </div>
+            <div class="right">
+                <form action="../../../controller/opi_controller/reg_check.php" method="post">
+                    <div class="form_container">
+                        <h1>SIGN UP</h1>
+                        <div class="inputbox">
+                            <input type="text" name="name" id="name" required onkeyup="username()">
+                            <label for="name">Name</label>
+                            <p id="name_val">Username should be at least of length 6</p>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="email" id="email" required onkeyup="email1()">
+                            <label for=" email">Email</label>
+                            <p id="email_val">Please Enter a valid email</p>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="password" id="password" required onkeyup="password1()">
+                            <label for="password">Password</label>
+                            <p id="pass_val">Password should be at least of length 6</p>
+
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" name="confirm_password" id="confirm_password" required
+                                onkeyup="con_password1()">
+                            <label for="con_password">Confirm Password</label>
+                            <p id="con_pass_val">Password and confirm password does not match</p>
+
+                        </div>
+                        <div class="inputradiobox">
+                            <input type="radio" name="type" id="type1" value="User"> User
+                            <input type="radio" name="type" id="type2" value="Advertiser"> Advertiser
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="submit" name="signup" value="SUBMIT" onclick="sign_up_req(event)">
+                        </div>
+                        <div class="inputbox" id="alreadey_account">
+                            <p>Already have an account?</p>
+                            <a href="signin.html">Sign in</a>
+                            <h4 id="display_error"></h4>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    </div>
+    <script src="../../../asset/js/opi_js/signup.js"></script>
+</body>
+</html>

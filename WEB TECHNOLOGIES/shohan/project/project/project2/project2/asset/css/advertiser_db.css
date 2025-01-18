@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(180, 58, 58);
+    background: linear-gradient(90deg, rgba(180, 58, 58, 0.6) 0%, rgba(253, 70, 29, 0.6) 46%, rgba(252, 176, 69, 0.6) 100%);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.logo_container img {
+    max-height: 40px;
+}
+
+.welcome_menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome_menu h1 {
+    font-size: 2.2em;
+    color: #333;
+}
+
+.welcome_advertiser {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome_advertiser h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+.welcome_advertiser .advertisername {
+    color: #00796b;
+    font-weight: bold;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    background-color: #decdc0;
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.section p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.generate-report {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.generate-report:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    height: 15vh;
+    background-color: black;
+    color: orange;
+}
+
+.footer p {
+    font-size: 2.9em;
+}

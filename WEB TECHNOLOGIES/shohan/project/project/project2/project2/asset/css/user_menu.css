@@ -1,0 +1,152 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background color and font */
+body {
+
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Main container setup */
+.main_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for content */
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Welcome section */
+.welcome_menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome_menu h1 {
+    font-size: 2.2em;
+    color: #333;
+}
+
+/* User welcome section */
+.welcome_user {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome_user h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+.welcome_user .username {
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Menu links styling */
+.menu_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu_links li {
+    margin: 30px 0;
+}
+
+.menu_links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fafcfa;
+    padding: 10px 60px;
+    background-color: #1ca427;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu_links a:hover {
+    background-color: #168b1f;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #a5d6a7; 
+    padding: 20px;
+    border-top: 1px solid #81c784;
+    margin-top: auto; /* Ensure footer sticks to bottom when content is short */
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    text-align: center; 
+    flex-wrap: wrap; 
+    padding: 10px 40px; 
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px; 
+    min-width: 150px; 
+}
+
+.footer-section h4 {
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    color: #000; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    font-size: 14px; 
+    font-family: Arial, sans-serif;
+    color: #000; 
+}
+
+.footer-section ul li a:hover {
+    color: #6c757d; 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #6c757d; 
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}

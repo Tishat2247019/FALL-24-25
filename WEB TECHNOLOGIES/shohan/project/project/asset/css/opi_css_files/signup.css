@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_container {
+  height: 100vh;
+  width: 100vw;
+  /* text-align: center; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  grid-area: header_area;
+  /* background-color: yellow; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo_container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_container img {
+  height: 100px;
+  /* border: 1px solid black; */
+}
+
+.left {
+  grid-area: left_area;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  /* align-items: ; */
+  /* border: 1px solid black; */
+  flex-direction: column;
+}
+
+.left h1 {
+  font-family: "CustomFont1", sans-serif;
+  font-size: 7vw;
+}
+
+.left h2 {
+  font-family: "CustomFont1", sans-serif;
+  font-size: 4vw;
+}
+
+.footer {
+  grid-area: footer_area;
+  /* background-color: aquamarine; */
+}
+@font-face {
+  font-family: "CustomFont1"; /* Name your font family */
+  src: url("../../font/Schnyder\ L\ Demi.otf"); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: "CustomFont2"; /* Name your font family */
+  src: url("../../font/Satoshi-Variable.ttf"); /* Locate the .ttf file within your directory*/
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header_area header_area"
+    "left_area right_area"
+    "footer_area footer_area";
+  grid-template-rows: 150px 1fr 100px;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(
+    245.59deg,
+    #4d9559 0%,
+    #3d703d 28.53%,
+    #133917 75.52%
+  );
+}
+.container .right {
+  grid-area: right_area;
+  /* background-color: rgb(188, 29, 40); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header_area"
+      "left_area"
+      "right_area"
+      "footer_area";
+    grid-template-rows: 50px 0.2fr 1fr 50px;
+    grid-template-columns: 1fr;
+    font-size: 4vh;
+  }
+  .footer {
+    border: 1px solid black;
+  }
+  .header {
+    border: 1px solid black;
+  }
+  .left {
+    border: 1px solid black;
+  }
+  .right {
+    border: 1px solid black;
+  }
+
+  .logo_container img {
+    height: 50px;
+    /* border: 1px solid black; */
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left h1 {
+    font-size: 60px;
+  }
+
+  form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+  }
+  .right form .form_container {
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+  }
+
+  .inputbox {
+    position: relative;
+  }
+
+  .form_container .inputbox label {
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+  }
+}
+
+form {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+
+.form_container {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 25px;
+  /* border: 2px solid black; */
+}
+
+.form_container .inputbox {
+  width: 90%;
+  /* border: 1px solid black; */
+  height: 60px;
+  position: relative;
+  /* padding: 10px; */
+  font-family: "CustomFont", sans-serif;
+}
+
+.form_container .inputbox input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  position: relative;
+  font-size: 15px;
+  font-family: "CustomFont", sans-serif;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.form_container .inputbox label {
+  padding: 0px 10px;
+  position: absolute;
+  left: 0;
+  top: 19px;
+  transition: 0.3s;
+  /* border: 1px solid black; */
+}
+
+.inputbox p {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.form_container .inputbox input[type="submit"] {
+  padding-left: 10px;
+  height: 100%; /* Same as other input fields */
+  /* padding-right: 20px; */
+  width: 100%; /* Same as other input fields */
+  /* Add a button-like appearance */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  /* border-radius: 5px;  */
+  cursor: pointer; /* Show pointer on hover */
+  font-size: 16px; /* Match font size */
+  transition: 200ms;
+  background-color: blue;
+  border-radius: 8px;
+}
+
+#alreadey_account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form_container .inputbox input[type="password"] {
+  font: caption;
+  font-size: 26px; /* Match font size */
+}
+
+.form_container .inputbox input[type="submit"]:hover {
+  background-color: #0056b3; /* Optional: darker color on hover */
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+  transform: translateX(0px) translateY(-10px);
+  /* background-color: white; */
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  font-family: "CustomFont2", sans-serif;
+}
+.inputbox input:focus {
+  border: 2px solid black;
+
+  /* border: none; */
+  border-radius: 8px;
+}
+
+.inputbox input:valid {
+  border: 2px solid black;
+
+  border-radius: 8px;
+}
