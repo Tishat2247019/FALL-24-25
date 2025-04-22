@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Contains the materials of the semester 2024-25
 
 ```
@@ -17,3 +18,24 @@ INTRODUCTION TO DATA SCIENCE
 ```
 WEB TECHNOLOGIES
 ```
+=======
+# Contains the materials of the semester 2024-25
+
+```
+ENGINEERING ETHICS
+``` 
+```
+COMPUTER ORGANIZATION AND ARCHITECTURE
+```
+```
+MACHINE LEARNING 
+``` 
+
+```
+INTRODUCTION TO DATA SCIENCE
+```
+
+```
+WEB TECHNOLOGIES
+```
+>>>>>>> 4919a8a7898ec4cedef2607cf061baa50e860b30
